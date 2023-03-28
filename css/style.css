@@ -1,4 +1,25 @@
 body {
     background-color: rgb(53, 53, 53);
-    color:rgb(255, 240, 219)
+    color:rgb(255, 240, 219);
+    text-align: center;
+}
+footer {
+    text-align: right;
+    border: 1px double rgb(255,240,219);
+    padding-right:30px;
+    margin: 0px;
+
+}
+.prueba {
+    color:rgb(255, 240, 219);
+    max-width: 400px;
+    display:inline-block;
+    padding: 20px;
+    margin: 50px;
+    border: 5px solid ;
+    border-radius: 10px 50px;
+}
+h1 {
+    font-size: 300%;
+
 }
