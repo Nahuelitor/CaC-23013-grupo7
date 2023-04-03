@@ -1,4 +1,4 @@
-ANTES DE COMENSAR A TRABAJAR EN EL PROYECTO
+ANTES DE COMENZAR A TRABAJAR EN EL PROYECTO
 --------------------------------------------
 
 Debemos sincronizar nuestra compu con GIT. Es decir descargar la 
