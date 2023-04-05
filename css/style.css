@@ -2,7 +2,7 @@ body {
     background-color: rgb(53, 53, 53);
     color:rgb(255, 240, 219);
     text-align: center;
-}´
+}
 header{
     margin:0px;
 
@@ -36,7 +36,7 @@ h1 {
 }
 /* lo siguiente le cambia los colores a los links */
 a:link {
-    color: #f8f550;
+    color: rgb(255,240,219);
     background-color: transparent;
     text-decoration: none;
   }
