@@ -1,28 +1,47 @@
 body {
-    background-color: rgb(53, 53, 53);
-    color:rgb(255, 240, 219);
-    text-align: center;
+    background-color: rgb(218, 239, 243);
+    color:rgb(0, 156, 135);
 }
-header{
-    margin:0px;
-
+/*menu header*/
+.menu ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #2af1d7;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:end
 }
-header,nav,ul {
-    list-style:none;
-    text-align:left;
-    margin:0px;
-    padding:0.3rem;
-
+.menu li a{
+  display: inline-block;
+  text-decoration: none;
+  padding: .6em  1em;
 }
-footer {
-    text-align: right;
-    border: 1px double rgb(255,240,219);
-    padding-right:30px;
-    margin: 0px;
-
+/*termina menu header*/
+/* lo siguiente le cambia los colores a los links del header */
+header a:link {
+  color: rgb(0, 156, 135);
+  background-color: transparent;
+  text-decoration: none;
 }
+header a:visited {
+  color: #006149;
+  background-color: transparent;
+  text-decoration: none;
+}
+header a:hover {
+  color: #008085;
+  background-color: #c1ffe8;
+  text-decoration: underline;
+}
+header a:active {
+  color: #b65200;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/* Acá termina colores links header. */
 .prueba {
-    color:rgb(255, 240, 219);
+    color:rgb(0, 156, 135);
     max-width: 400px;
     display:inline-block;
     padding: 20px;
@@ -32,26 +51,24 @@ footer {
 }
 h1 {
     font-size: 300%;
+    text-align: center;
 
 }
-/* lo siguiente le cambia los colores a los links */
-a:link {
-    color: rgb(255,240,219);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #afafaf;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #e7d9d9;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  a:active {
-    color: #fdc97a;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+h3{
+  text-align:center;
+}
+/*comienza footer*/
+footer {
+  text-align: right;
+  border: 10px double rgb(0, 156, 135);
+  padding-right:30px;
+  margin: 0px;
+}
+/*termina footer*/
+/*imagen fondo en section (cuerpo-home) (le puse un corte en 1065)*/
+.cuerpo-home{
+background-image: url(../images/imagen1.jpg) ;
+background-repeat:no-repeat;
+background-size:100%;
+min-width: 1065px;
+}
