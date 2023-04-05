@@ -35,7 +35,7 @@ header a:hover {
   text-decoration: underline;
 }
 header a:active {
-  color: #b65200;
+  color: rgb(1, 77, 66);
   background-color: transparent;
   text-decoration: underline;
 }
