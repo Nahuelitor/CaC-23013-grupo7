@@ -7,7 +7,7 @@ body {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  background: #2af1d7;
+  background: rgb(0, 156, 135);
   display: flex;
   flex-wrap:wrap;
   justify-content:end
@@ -20,12 +20,12 @@ body {
 /*termina menu header*/
 /* lo siguiente le cambia los colores a los links del header */
 header a:link {
-  color: rgb(0, 156, 135);
+  color: rgb(11, 158, 139);
   background-color: transparent;
   text-decoration: none;
 }
 header a:visited {
-  color: #006149;
+  color: #ffffff;
   background-color: transparent;
   text-decoration: none;
 }
