@@ -59,6 +59,8 @@ header a:link {
   background-color: transparent;
   text-decoration: none;
 }
+
+/* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
 header a:visited {
   color: #ffffff;
   background-color: transparent;
@@ -114,22 +116,61 @@ footer {
 .developer {
   border: 1px solid;  
   padding: .7%;
+  text-align: center;
 }
 
-.social_networks {
+.developer a {
+  text-decoration: none;
+  color:rgb(0, 156, 135);
+  display: inline-block;
+}
+
+.developer a:link {
+/*  color: rgb(11, 158, 139);
+  background-color: transparent;
+  text-decoration: none;*/
+}
+
+/* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
+
+.developer a:visited {
+  color: #0997f7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.developer a:hover {
+  color: #008085;
+  /*background-color: #c1ffe8;*/
+  text-decoration: underline;
+}
+.developer a:active {
+  color: rgb(1, 77, 66);
+  background-color: transparent;
+  text-decoration: underline;
+}
+.social_medias {
   position: absolute;
-  right: 5px;
-i  margin: 0;
+  right: 10px;
+  margin: .5em;
+  margin-right: 0;
+  display: flex;
+
+/* le puse borde sólo para que sirva de guia. Luego lo sacamos */  
   border: 1px solid;    
-  margin-top: 1%;
 
 }
 
-.social_networks ul{
+.icon {
+  width: 30px;
+  margin: 2px;
+}
 
-/*    padding: .3rem .5rem;*/
+
+.social_media{
+}
+/*
   width:min-content;
-  display: flex;
   list-style: none;
   margin-right: .5rem;
   margin-left: auto;
@@ -142,9 +183,8 @@ i  margin: 0;
 }
 
 .social_networks ul li a {
-  text-decoration: none;
-  color: #0d0847;
+
   font-size: .9rem;
 }
-
+*/
 /*termina footer*/
