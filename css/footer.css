@@ -1,0 +1,95 @@
+/*FER LA CAGUE CON LOS SOCIAL MEDIAS xD, quise cambiar
+como se veían los developers (que si no gustan pueden
+cambiar o volver a como estaban antes, y los social 
+media no los pude volver a ubicar bien... otro desafío.*/
+
+footer {
+    /*display: flex*/
+    /*text-align: right;*/
+    /*border-top: 2px solid rgb;(0, 156, 135)*/
+    /*padding-right:30px;*/
+    background-color:rgb(188, 246, 253);
+
+    margin:0;
+    padding:.3em
+
+   /* flex-wrap:wrap;*/
+  /*  justify-content:end*/
+  }
+  
+  .developers {
+    margin-top: 1%;
+    width: 70%;
+  /*  display: flex;*/
+  }
+  
+  .developer {
+   /* border: 1px solid; */ 
+    margin-left: 10px;
+    text-align: left;
+  }
+  
+  .developer a {
+    text-decoration: none;
+    color:rgb(0, 156, 135);
+  /*  display: inline-block;*/
+  }
+  
+  /*.developer a:link {
+    color: rgb(11, 158, 139);
+    background-color: transparent;
+    text-decoration: none;
+  }*/
+  
+  /* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
+  /*no Fer, lo que pasa es q una vez q ya entraste al link, no lo podes ver más como si no lo hubieses visitado..*/
+  
+  .developer a:visited {
+    color: #00538a;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  .developer a:hover {
+    color: #008085;
+    /*background-color: #c1ffe8;*/
+    text-decoration: underline;
+  }
+  .developer a:active {
+    color: rgb(1, 77, 66);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .social_medias {
+    position:absolute;
+    bottom:35px;
+    right: 10px;
+    margin: .5em;
+    margin-right: 0;
+    display: inline-flex;
+  
+  
+  /* le puse borde sólo para que sirva de guia. Luego lo sacamos */  
+    border: 1px solid;    
+  
+  }
+  
+  .icon {
+    width: 30px;
+    margin: 2px;
+  }
+  
+  
+  /*.social_media{
+  }
+  
+    width:min-content;
+    list-style: none;
+    margin-right: .5rem;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  */
+  /*termina footer*/
