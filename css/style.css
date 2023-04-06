@@ -2,6 +2,42 @@ body {
     background-color: rgb(218, 239, 243);
     color:rgb(0, 156, 135);
 }
+
+/* Puntos de corte (Breakpoints) */
+
+/*Estra small devices (600px and down) - Celu vertical */
+@media only screen and (max-width: 600px){
+  .cuerpo-home {background-image: url(../images/img_bkgrnd_600.jpg);}
+}
+
+/*Small devices (600px and up) - Celu Vertical */
+@media only screen and (min-width: 600px){
+  .cuerpo-home {background-image: url(../images/img_bkgrnd_768.jpg);}
+}
+/*Medium devices (768px and up) - Tablet */
+@media only screen and (min-width: 768px){
+  .cuerpo-home {background-image: url(../images/img_bkgrnd_992.jpg);}
+}
+
+/*Large devices (992px and up) - Monitor pequeño */
+@media only screen and (min-width: 992px){
+  .cuerpo-home {background-image: url(../images/img_bkgrnd_1200.jpg);}
+}
+
+/*Extra large devices (1200px and up) - Monitor Grande*/
+@media only screen and (min-width: 1200px){
+  .cuerpo-home {background-image: url(../images/img_bkgrnd_1356.jpg);}
+}
+
+/*imagen fondo en section (cuerpo-home) (le puse un corte en 1065)*/
+.cuerpo-home{
+/*
+  background-repeat:no-repeat;
+  background-size:100%;
+  min-width: 1065px;
+*/  
+}
+
 /*menu header*/
 .menu ul{
   list-style-type: none;
@@ -40,35 +76,80 @@ header a:active {
   text-decoration: underline;
 }
 /* Acá termina colores links header. */
-.prueba {
+.presentation {
     color:rgb(0, 156, 135);
-    max-width: 400px;
+    margin: 5%; 
+    width: 55%;
     display:inline-block;
-    padding: 20px;
-    margin: 50px;
+    padding: 3%;
     border: 5px solid ;
     border-radius: 10px 50px;
 }
-h1 {
+.main_title {
     font-size: 300%;
     text-align: center;
 
 }
-h3{
+.sub_title {
+  font-size: 120%;
   text-align:center;
 }
 /*comienza footer*/
 footer {
-  text-align: right;
-  border: 10px double rgb(0, 156, 135);
+  display: flex;
+  /*text-align: right;*/
+  border-top: 2px solid rgb(0, 156, 135);
   padding-right:30px;
   margin: 0px;
+  display: flex;
+
+  flex-wrap:wrap;
+/*  justify-content:end*/
 }
+
+.developers {
+  margin-top: 1%;
+  width: 70%;
+  display: flex;
+}
+
+.developer {
+  border: 1px solid;  
+  padding: .7%;
+}
+
+address {
+}
+
+.social_networks {
+  position: absolute;
+  right: 5px;
+  margin: 0;
+  border: 1px solid;    
+  margin-top: 1%;
+
+}
+
+.social_networks ul{
+
+/*    padding: .3rem .5rem;*/
+  width:min-content;
+  display: flex;
+  list-style: none;
+  margin-right: .5rem;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social_networks ul li {
+  margin-left: .5rem;
+}
+
+.social_networks ul li a {
+  text-decoration: none;
+  color: #0d0847;
+  font-size: .9rem;
+}
+
 /*termina footer*/
-/*imagen fondo en section (cuerpo-home) (le puse un corte en 1065)*/
-.cuerpo-home{
-background-image: url(../images/imagen1.jpg) ;
-background-repeat:no-repeat;
-background-size:100%;
-min-width: 1065px;
-}
