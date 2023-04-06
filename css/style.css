@@ -30,13 +30,12 @@ body {
 }
 
 /*imagen fondo en section (cuerpo-home) (le puse un corte en 1065)*/
-.cuerpo-home{
-/*
+/*.cuerpo-home{
+
   background-repeat:no-repeat;
   background-size:100%;
   min-width: 1065px;
-*/  
-}
+}*/
 
 /*menu header*/
 .menu ul{
@@ -102,7 +101,6 @@ footer {
   padding-right:30px;
   margin: 0px;
   display: flex;
-
   flex-wrap:wrap;
 /*  justify-content:end*/
 }
@@ -116,9 +114,6 @@ footer {
 .developer {
   border: 1px solid;  
   padding: .7%;
-}
-
-address {
 }
 
 .social_networks {
