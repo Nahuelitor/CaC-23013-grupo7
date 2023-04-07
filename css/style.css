@@ -1,36 +1,37 @@
 body {
     background-color: rgb(218, 239, 243);
     color:rgb(0, 156, 135);
+    margin:0;
 }
 
 /* Puntos de corte (Breakpoints) */
 
 /*Estra small devices (600px and down) - Celu vertical */
 @media only screen and (max-width: 600px){
-  .cuerpo-home {background-image: url(../images/img_bkgrnd_600.jpg);}
+  .bodyhome {background-image: url(../images/img_bkgrnd_600.jpg);}
 }
 
 /*Small devices (600px and up) - Celu Vertical */
 @media only screen and (min-width: 600px){
-  .cuerpo-home {background-image: url(../images/img_bkgrnd_768.jpg);}
+  .bodyhome {background-image: url(../images/img_bkgrnd_768.jpg);}
 }
 /*Medium devices (768px and up) - Tablet */
 @media only screen and (min-width: 768px){
-  .cuerpo-home {background-image: url(../images/img_bkgrnd_992.jpg);}
+  .bodyhome {background-image: url(../images/img_bkgrnd_992.jpg);}
 }
 
 /*Large devices (992px and up) - Monitor pequeño */
 @media only screen and (min-width: 992px){
-  .cuerpo-home {background-image: url(../images/img_bkgrnd_1200.jpg);}
+  .bodyhome {background-image: url(../images/img_bkgrnd_1200.jpg);}
 }
 
 /*Extra large devices (1200px and up) - Monitor Grande*/
 @media only screen and (min-width: 1200px){
-  .cuerpo-home {background-image: url(../images/img_bkgrnd_1356.jpg);}
+  .bodyhome {background-image: url(../images/img_bkgrnd_1356.jpg);}
 }
 
-/*imagen fondo en section (cuerpo-home) (le puse un corte en 1065)*/
-/*.cuerpo-home{
+/*imagen fondo en section (bodyhome) (le puse un corte en 1065)*/
+/*.bodyhome{
 
   background-repeat:no-repeat;
   background-size:100%;

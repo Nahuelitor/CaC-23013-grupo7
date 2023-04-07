@@ -1,5 +1,5 @@
 /*menu header*/
-.menu ul{
+.navbar ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -8,7 +8,21 @@
     flex-wrap:wrap;
     justify-content:end
   }
-  .menu li a{
+  .navbar li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: .6em  1em;
+  }
+#navbar ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: rgb(0, 156, 135);
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:end
+  }
+  #navbar li a{
     display: inline-block;
     text-decoration: none;
     padding: .6em  1em;
@@ -38,3 +52,16 @@
     text-decoration: underline;
   }
   /* Acá termina colores links header. */
+
+  /* hacer sticky la barra de menú */
+    
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .sticky + .bodyhome {
+    padding-top: 60px;
+  }
+  /*hasta acá llega barra sticky*/
