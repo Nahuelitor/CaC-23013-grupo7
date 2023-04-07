@@ -30,4 +30,13 @@ git push origin main  -->  para subirlo a github..
 
 ******* MUY IMPORTANTE  *******
 Ponernos de acuerdo para no trabar de manera paralela en el 
-mismo archivo. Ya que el segundo eliminará al primero
+mismo archivo. Ya que el segundo eliminará al primero.
+
+
+PARA ELIMINAR LOS ÚLTIMOS CAMBIOS REALIZADOS SOBRE EL TRABAJO EN MI MÁQUINA
+----------------------------------------------------------------------------
+
+git reset --hard HEAD
+
+Si realicé modificaciones que quiero descartar para 
+oder descargar el trabajo actualizado del main.
