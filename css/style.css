@@ -56,3 +56,10 @@ body {
   font-size: 120%;
   text-align:center;
 }
+
+/* PARA MODIFICAR FORMULARIO DE TURNOS */
+
+#formulario{
+  margin:1em;
+  padding:.4em;
+}
