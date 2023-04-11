@@ -4,7 +4,7 @@ cambiar o volver a como estaban antes, y los social
 media no los pude volver a ubicar bien... otro desafío.*/
 
 footer {
-    display:inline-flex;
+    display:flexbox;
     /*text-align: right;*/
     border-top: 5px solid rgb(0, 156, 135);
     /*padding-right:30px;*/
