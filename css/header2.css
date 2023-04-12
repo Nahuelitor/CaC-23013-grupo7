@@ -5,14 +5,13 @@
   position: sticky;
   top: 0;
   background: rgb(0, 156, 135);  
-  outline:  solid rgb(0, 156, 135);
 }
 
 .navbar_css ul{
   list-style-type: none;
   display: flex;
   flex-wrap:wrap;
-  justify-content:end
+  justify-content:end;
 }
 
 .navbar_css li a{
@@ -26,7 +25,7 @@
   /*termina menu header*/
   /* lo siguiente le cambia los colores a los links del header */
   header a:link {
-    color: rgb(11, 158, 139);
+    color: #ffffff;
     background-color: transparent;
     text-decoration: none;
   }

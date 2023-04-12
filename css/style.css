@@ -45,7 +45,7 @@ body {
     display:inline-block;
     padding: 3%;
     border: 5px solid ;
-    border-radius: 10px 50px;
+    border-radius: 50px;
 }
 .main_title {
     font-size: 300%;
@@ -53,9 +53,10 @@ body {
 
 }
 .sub_title {
-  font-size: 120%;
+  font-size: 150%;
   text-align:center;
 }
+
 
 /* PARA MODIFICAR FORMULARIO DE TURNOS */
 
