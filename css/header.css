@@ -20,8 +20,6 @@
   text-decoration: none;
   padding: .6em  1em;
 }
-
-
   /*termina menu header*/
   /* lo siguiente le cambia los colores a los links del header */
   header a:link {
@@ -29,8 +27,6 @@
     background-color: transparent;
     text-decoration: none;
   }
-  
-  /* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
   header a:visited {
     color: #ffffff;
     background-color: transparent;

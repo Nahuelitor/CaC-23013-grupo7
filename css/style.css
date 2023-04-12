@@ -26,3 +26,21 @@ body {
   margin:1em;
   padding:.4em;
 }
+/* definiendo grillas para turnos */
+.grilla {
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(1,1fr);
+  grid-template-areas: "presentation presentation presentation turnos turnos"
+
+}
+
+.grilla .presentation {
+  grid-area: presentation;
+  grid-column:1/4;
+}
+
+.grilla .turnos {
+  grid-area: turnos;
+  grid-column:4/6;
+}

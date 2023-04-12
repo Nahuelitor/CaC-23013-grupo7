@@ -28,7 +28,8 @@
         </nav>
     </header>
     
-    <section class="presentation">
+    <div class="grilla">
+        <section class="presentation">
             <div class="turnos">
                 <h2>Turnos</h2>
                 <p>En el <b>Consultorio Médico de la Familia</b>, ofrecemos una amplia gama de servicios médicos para satisfacer todas las necesidades de salud de nuestros pacientes. Nos enorgullecemos de proporcionar atención médica de alta calidad y personalizada a cada uno de nuestros pacientes. Y para hacer que nuestro servicio sea más accesible, ofrecemos diferentes opciones de turnos para adaptarnos a las agendas de nuestros pacientes.<br><br>
@@ -46,86 +47,82 @@
                 Es importante destacar que nuestros pacientes pueden cancelar o reprogramar sus turnos en caso de cualquier imprevisto o emergencia. Entendemos que la vida puede ser impredecible, por lo que hacemos todo lo posible para adaptarnos a las necesidades de nuestros pacientes.<br><br>
                 En resumen, en el <b>Consultorio Médico de la Familia</b> ofrecemos una amplia variedad de opciones de turnos para adaptarnos a las necesidades de nuestros pacientes. Desde turnos programados hasta turnos de urgencia</p>
             </div>
-    </section>
+        </section>
 
-    <div id="formulario">
-    <h2>Reserva de Turnos</h2>
-    <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
-    
-        <form>
-            <fieldset id="campodatos">
-                <legend><b>Datos personales</b></legend>
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre"  autocomplete="on"required><br>
+        <div id="formulario">
+        <h2>Reserva de Turnos</h2>
+        <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
+        
+            <form>
+                <fieldset id="campodatos">
+                    <legend><b>Datos personales</b></legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre"  autocomplete="on"required><br>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido"  autocomplete="on"required><br>
+                    <label for="dni">DNI: </label>
+                    <input type="text" id="dni" name="dni"  autocomplete="on"required><br>
+                    <label for="fecNac">Fecha de nacimiento</label>
+                    <input type="date" name="fecNac" id="fecNac"><br>
+                    <label for="correo">E-mail</label>
+                    <input type="email" name="correo" id="correo" autocomplete="on" required><br>
+                    <label for="teléfono">Teléfono:</label>
+                    <input type="tel" id="teléfono" name="teléfono" placeholder="11-2345-6789" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+                    <small>Ej: 11-2345-6789</small><br>
+                </fieldset>
 
-                <label for="apellido">Apellido: </label>
-                <input type="text" id="apellido" name="apellido"  autocomplete="on"required><br>
-
-                <label for="dni">DNI: </label>
-                <input type="text" id="dni" name="dni"  autocomplete="on"required><br>
-
-                <label for="fecNac">Fecha de nacimiento</label>
-                <input type="date" name="fecNac" id="fecNac"><br>
-
-                <label for="correo">E-mail</label>
-                <input type="email" name="correo" id="correo" autocomplete="on" required><br>
-
-                <label for="teléfono">Teléfono:</label>
-                <input type="tel" id="teléfono" name="teléfono" placeholder="11-2345-6789" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
-                <small>Ej: 11-2345-6789</small><br>
-            </fieldset>
-
-            <br>
-            <label for="adjuntar">Si posee receta, adjuntarla a continuación:</label>
-            <input type="file" name="adjuntar" id="adjuntar"><br><br>
-
-            <fieldset id="campoturnos">
-                <legend><b>Turnos</b></legend>
-                
-                <label for="turno">Seleccionar tipo de <b>turno</b>:</label><br>
-                <select name="turno" id="turno" size="1" required>
-                    <option value="1">--</option>
-                    <option value="2">Programado</option>
-                    <option value="3">Urgencia</option>
-                    <option value="4">Telemedicina</option>
-                    <option value="5">Seguimiento</option>
-                    <option value="6">Vacunación</option>
-                    <option value="7">Chequeo preventivo</option>
-                    <option value="8">Especializada</option>
-                </select>
                 <br>
-                <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label><br>
-                <select name="turno" id="turno" size="1">
-                    <option value="1">--</option>
-                    <option value="2">Pediatría</option>
-                    <option value="3">Prenatal</option>
-                    <option value="4">Diabetes</option>
-                    <option value="5">Salud mental</option>
-                    <option value="6">Dermatología</option>
-                    <option value="7">Ginecología</option>
-                    <option value="8">Sexología</option>
-                    <option value="9">Cardiología</option>
-                    <option value="10">Nutricionista</option>
-                    <option value="11">Endocrinología</option>
-                    <option value="12">Oftalmología</option>
-                    <option value="13">Traumatología</option>
-                    <option value="14">Neurología</option>
-                    <option value="15">Gastroenterología</option>
-                    <option value="16">Médico de cabecera/general</option>
-                </select>
-                <br>
-                <label for="dia">Seleccione el día:</label>
-                <input type="date" name="dia" id="dia" required min="today"><br>
-                <br>
-                <label for="hora">Seleccione el horario:</label>
-                <input type="time" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
-                <small>El horario de atención es de 9am a 6pm</small>
-                <br>
+                <label for="adjuntar">Si posee receta, adjuntarla a continuación:</label>
+                <input type="file" name="adjuntar" id="adjuntar"><br><br>
 
-                <button type="submit" onclick="descargarCSV()" style="margin:1em;">Enviar</button>
-            </fieldset>
-        <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
-        </form>
+                <fieldset id="campoturnos">
+                    <legend><b>Turnos</b></legend>
+                    
+                    <label for="turno">Seleccionar tipo de <b>turno</b>:</label><br>
+                    <select name="turno" id="turno" size="1" required>
+                        <option value="1">--</option>
+                        <option value="2">Programado</option>
+                        <option value="3">Urgencia</option>
+                        <option value="4">Telemedicina</option>
+                        <option value="5">Seguimiento</option>
+                        <option value="6">Vacunación</option>
+                        <option value="7">Chequeo preventivo</option>
+                        <option value="8">Especializada</option>
+                    </select>
+                    <br>
+                    <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label><br>
+                    <select name="turno" id="turno" size="1">
+                        <option value="1">--</option>
+                        <option value="2">Pediatría</option>
+                        <option value="3">Prenatal</option>
+                        <option value="4">Diabetes</option>
+                        <option value="5">Salud mental</option>
+                        <option value="6">Dermatología</option>
+                        <option value="7">Ginecología</option>
+                        <option value="8">Sexología</option>
+                        <option value="9">Cardiología</option>
+                        <option value="10">Nutricionista</option>
+                        <option value="11">Endocrinología</option>
+                        <option value="12">Oftalmología</option>
+                        <option value="13">Traumatología</option>
+                        <option value="14">Neurología</option>
+                        <option value="15">Gastroenterología</option>
+                        <option value="16">Médico de cabecera/general</option>
+                    </select>
+                    <br>
+                    <label for="dia">Seleccione el día:</label>
+                    <input type="date" name="dia" id="dia" required min="today"><br>
+                    <br>
+                    <label for="hora">Seleccione el horario:</label>
+                    <input type="time" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
+                    <small>El horario de atención es de 9am a 6pm</small>
+                    <br>
+
+                    <button type="submit" onclick="descargarCSV()" style="margin:1em;">Enviar</button>
+                </fieldset>
+            <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
+            </form>
+        </div>
     </div>
     <footer>
         <address>
