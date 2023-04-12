@@ -1,36 +1,31 @@
+
 /*menu header*/
-.navbar ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background: rgb(0, 156, 135);
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:end
-  }
-  .navbar li a{
-    display: inline-block;
-    text-decoration: none;
-    padding: .6em  1em;
-  }
-#navbar ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background: rgb(0, 156, 135);
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:end
-  }
-  #navbar li a{
-    display: inline-block;
-    text-decoration: none;
-    padding: .6em  1em;
-  }
+
+.navbar_css {
+  position: sticky;
+  top: 0;
+  background: rgb(0, 156, 135);  
+}
+
+.navbar_css ul{
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:end;
+}
+
+.navbar_css li a{
+
+  display: inline-block;
+  text-decoration: none;
+  padding: .6em  1em;
+}
+
+
   /*termina menu header*/
   /* lo siguiente le cambia los colores a los links del header */
   header a:link {
-    color: rgb(11, 158, 139);
+    color: #ffffff;
     background-color: transparent;
     text-decoration: none;
   }
@@ -52,16 +47,3 @@
     text-decoration: underline;
   }
   /* Acá termina colores links header. */
-
-  /* hacer sticky la barra de menú */
-    
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-
-  .sticky + .bodyhome {
-    padding-top: 60px;
-  }
-  /*hasta acá llega barra sticky*/

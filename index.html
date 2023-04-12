@@ -16,33 +16,18 @@
     <h1 class="main_title animate__animated animate__bounceInLeft animate__slower">Consultorio Médico de la Familia</h1>
     <h3 class="sub_title animate__animated animate__bounceInRight animate__slower animate__delay-1s">Cuidar su salud y la de su familia es nuestra vocación.</h3>
 
-    <header>
-            <div id="navbar">
-                <ul>
-                    <li><a href="paginas/staff.html">Staff</a></li>
-                    <li><a href="paginas/consultorios.html">Consultorios</a></li>
-                    <li><a href="paginas/turnos.html">Turnos</a></li>
-                </ul>
-            </div>
+    <header class="navbar_css">
+        <div>
+            <ul>
+                <li><a href="paginas/staff.html">Staff</a></li>
+                <li><a href="paginas/consultorios.html">Consultorios</a></li>
+                <li><a href="paginas/turnos.html">Turnos</a></li>
+            </ul>
+        </div>
     </header>
- <!-- Lo que viene (script), es para que baje la barra del menú cuando scrolleas. -->
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-    </script>
-
-    <section class="bodyhome">
-        <div class="presentation">
+ 
+    <section class="presentation">
+        <div class="bodyhome">
         <p>Bienvenidos al <b>Consultorio Médico de la Familia</b>, su lugar de confianza para cuidar de su salud. Somos un equipo de médicos y especialistas altamente capacitados y comprometidos con su bienestar. Ofrecemos una amplia gama de servicios médicos para satisfacer todas sus necesidades, desde consultas de rutina hasta tratamientos avanzados. <br><br>
         Nuestra misión es proporcionar atención médica de alta calidad y personalizada a todos nuestros pacientes. Nos tomamos el tiempo para escuchar y comprender sus preocupaciones de salud, y trabajamos en colaboración con usted para desarrollar un plan de tratamiento que se adapte a sus necesidades únicas.<br><br>
         Ofrecemos una variedad de servicios médicos para satisfacer todas sus necesidades. Aquí hay un vistazo a algunos de los servicios que ofrecemos:</p>
@@ -60,7 +45,7 @@
         <p>En el <b>Consultorio Médico de la Familia</b>, creemos que la prevención es la clave para mantener una buena salud a largo plazo. Por eso, también ofrecemos servicios de prevención, que incluyen chequeos regulares, pruebas de detección y asesoramiento sobre cambios en el estilo de vida. Estamos comprometidos con ayudar a nuestros pacientes a mantenerse saludables y prevenir enfermedades antes de que se conviertan en problemas graves.<br><br>
         En resumen, en el <b>Consultorio Médico de la Familia</b> ofrecemos una amplia gama de servicios médicos para satisfacer todas sus necesidades de salud. Nos esforzamos por proporcionar atención médica de alta calidad y personalizada a cada uno de nuestros pacientes. Si está buscando un lugar de confianza para cuidar de su salud, no busque más allá del <b>Consultorio Médico de la Familia</b>.<br><br>
         Finalmente, queremos invitarlos a que nos visiten y se unan a nuestra comunidad de pacientes satisfechos. Nos enorgullece ofrecer un ambiente amigable y acogedor para todos nuestros pacientes, con instalaciones modernas y tecnología de última generación. <em><b>¡Esperamos verlos pronto!</b></em></p>
-        </section>
+    </section>
     <footer class="footer">
         <address>
             <div class="developers">
