@@ -31,26 +31,22 @@ body {
 .grilla {
   display:grid;
   grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(1,1fr);
+  grid-template-rows: repeat(2,1fr);
   grid-template-areas: "presentation presentation presentation turnos turnos"
-
 }
-
 .grilla .presentationTurnos {
   grid-area: presentation;
   grid-column:1/4;
 }
-
 .grilla .turnos {
   grid-area: turnos;
   grid-column:4/6;
 }
-
 .presentationTurnos {
   color:rgb(0, 156, 135);
   margin: 5%; 
   padding: 3%;
   border: 5px solid ;
   border-radius: 50px;
-  min-width: 30%;
+  min-width: 30%; /*creí que con esto arreglaría algo, pero no funca.*/
 }
