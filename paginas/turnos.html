@@ -58,7 +58,7 @@
             <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
         
             <form>
-                <fieldset class="fiels_datos">
+                <fieldset class="fields_datos">
                     <legend><b>Datos personales</b></legend>
                     <div class="field_form">                      
                         <label for="nombre">Nombre: </label>
@@ -83,30 +83,22 @@
                     <div class="field_form">                      
                         <label for="teléfono">Teléfono:</label>
                         <input type="tel" id="teléfono" name="teléfono" placeholder="11-2345-6789" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
-                    </div>
-                    <div class="field_form">                      
-                        <small>Ej: 11-2345-6789</small>
-                    </div>
+                    </div>                   
+                    <small>Ej: 11-2345-6789</small>
                 </fieldset>
 
-                <div class="fields_adjunto">
-    <!-- Reemplazar los <br> por padding -->
-                    <div class="field_form">                      
-                        <br>
-                        <label for="adjuntar">Si posee receta, adjuntarla a continuación:</label>
-                        <input type="file" name="adjuntar" id="adjuntar">
-                    </div>
-                    <div class="field_form">                      
-                    </div>
-                    <div class="field_form">                      
-                            <br><br>
-                    </div>
-                </div>
+                <fieldset class="fields_receta">
+                    <legend><b>Receta</b></legend>
+                        <div class="field_form">                      
+                            <label for="adjuntar">Si posee una receta, adjúntela a continuación:</label>
+                            <input type="file" name="adjuntar" id="adjuntar">
+                        </div>
+                </fieldset>
                 <fieldset class="fields_turnos">
                     <legend><b>Turnos</b></legend>
                     
                     <div class="field_form">                      
-                        <label for="turno">Seleccionar tipo de <b>turno</b>:</label><br>
+                        <label for="turno">Seleccionar tipo de <b>turno</b>:</label>
                         <select name="turno" id="turno" size="1" required>
                             <option value="1">--</option>
                             <option value="2">Programado</option>
@@ -119,7 +111,7 @@
                         </select>
                     </div>
                     <div class="field_form">                      
-                        <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label><br>
+                        <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label>
                         <select name="turno" id="turno" size="1">
                             <option value="1">--</option>
                             <option value="2">Pediatría</option>
@@ -146,10 +138,8 @@
                     <div class="field_form">                      
                         <label for="hora">Seleccione el horario:</label>
                         <input type="time" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
-                    </div>
-                    <div class="field_form">                      
-                        <small>El horario de atención es de 9am a 6pm</small>
-                    </div>
+                    </div>               
+                    <small>El horario de atención es de 9am a 6pm</small>
                 </fieldset>
                 <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
                 <button class="button_send" type="submit" onclick="descargarCSV()">Enviar</button>
