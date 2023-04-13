@@ -31,7 +31,10 @@
     <div class="grilla">
         <section class="presentationTurnos">
             <div class="turnos">
+                <!-- <button><a href="#request_form">Solicitar Turno</a></button> -->
                 <h2>Turnos</h2>
+                <p><b>Por favor lea atentamente esta información antes de solicitar un turno.</b></p>
+
                 <p>En el <b>Consultorio Médico de la Familia</b>, ofrecemos una amplia gama de servicios médicos para satisfacer todas las necesidades de salud de nuestros pacientes. Nos enorgullecemos de proporcionar atención médica de alta calidad y personalizada a cada uno de nuestros pacientes. Y para hacer que nuestro servicio sea más accesible, ofrecemos diferentes opciones de turnos para adaptarnos a las agendas de nuestros pacientes.<br><br>
                 Los turnos que ofrecemos incluyen:</p>
                 <ul>
@@ -49,79 +52,108 @@
             </div>
         </section>
 
-        <div id="formulario">
-        <h2>Reserva de Turnos</h2>
-        <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
+        <div class="form">
+            <!-- <h2 id="request_form">Reserva de Turnos</h2> -->
+            <h2>Reserva de Turnos</h2>
+            <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
         
             <form>
-                <fieldset id="campodatos">
+                <fieldset class="fiels_datos">
                     <legend><b>Datos personales</b></legend>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" id="nombre" name="nombre"  autocomplete="on"required><br>
-                    <label for="apellido">Apellido: </label>
-                    <input type="text" id="apellido" name="apellido"  autocomplete="on"required><br>
-                    <label for="dni">DNI: </label>
-                    <input type="text" id="dni" name="dni"  autocomplete="on"required><br>
-                    <label for="fecNac">Fecha de nacimiento</label>
-                    <input type="date" name="fecNac" id="fecNac"><br>
-                    <label for="correo">E-mail</label>
-                    <input type="email" name="correo" id="correo" autocomplete="on" required><br>
-                    <label for="teléfono">Teléfono:</label>
-                    <input type="tel" id="teléfono" name="teléfono" placeholder="11-2345-6789" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
-                    <small>Ej: 11-2345-6789</small><br>
+                    <div class="field_form">                      
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre"  autocomplete="on"required>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" id="apellido" name="apellido"  autocomplete="on"required>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="dni">DNI: </label>
+                        <input type="text" id="dni" name="dni"  autocomplete="on"required>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="fecNac">Fecha de Nac.</label>
+                        <input type="date" name="fecNac" id="fecNac">
+                    </div>
+                    <div class="field_form">                                              
+                        <label for="correo">E-mail</label>
+                        <input type="email" name="correo" id="correo" autocomplete="on" required>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="teléfono">Teléfono:</label>
+                        <input type="tel" id="teléfono" name="teléfono" placeholder="11-2345-6789" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+                    </div>
+                    <div class="field_form">                      
+                        <small>Ej: 11-2345-6789</small>
+                    </div>
                 </fieldset>
 
-                <br>
-                <label for="adjuntar">Si posee receta, adjuntarla a continuación:</label>
-                <input type="file" name="adjuntar" id="adjuntar"><br><br>
-
-                <fieldset id="campoturnos">
+                <div class="fields_adjunto">
+    <!-- Reemplazar los <br> por padding -->
+                    <div class="field_form">                      
+                        <br>
+                        <label for="adjuntar">Si posee receta, adjuntarla a continuación:</label>
+                        <input type="file" name="adjuntar" id="adjuntar">
+                    </div>
+                    <div class="field_form">                      
+                    </div>
+                    <div class="field_form">                      
+                            <br><br>
+                    </div>
+                </div>
+                <fieldset class="fields_turnos">
                     <legend><b>Turnos</b></legend>
                     
-                    <label for="turno">Seleccionar tipo de <b>turno</b>:</label><br>
-                    <select name="turno" id="turno" size="1" required>
-                        <option value="1">--</option>
-                        <option value="2">Programado</option>
-                        <option value="3">Urgencia</option>
-                        <option value="4">Telemedicina</option>
-                        <option value="5">Seguimiento</option>
-                        <option value="6">Vacunación</option>
-                        <option value="7">Chequeo preventivo</option>
-                        <option value="8">Especializada</option>
-                    </select>
-                    <br>
-                    <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label><br>
-                    <select name="turno" id="turno" size="1">
-                        <option value="1">--</option>
-                        <option value="2">Pediatría</option>
-                        <option value="3">Prenatal</option>
-                        <option value="4">Diabetes</option>
-                        <option value="5">Salud mental</option>
-                        <option value="6">Dermatología</option>
-                        <option value="7">Ginecología</option>
-                        <option value="8">Sexología</option>
-                        <option value="9">Cardiología</option>
-                        <option value="10">Nutricionista</option>
-                        <option value="11">Endocrinología</option>
-                        <option value="12">Oftalmología</option>
-                        <option value="13">Traumatología</option>
-                        <option value="14">Neurología</option>
-                        <option value="15">Gastroenterología</option>
-                        <option value="16">Médico de cabecera/general</option>
-                    </select>
-                    <br>
-                    <label for="dia">Seleccione el día:</label>
-                    <input type="date" name="dia" id="dia" required min="today"><br>
-                    <br>
-                    <label for="hora">Seleccione el horario:</label>
-                    <input type="time" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
-                    <small>El horario de atención es de 9am a 6pm</small>
-                    <br>
-
-                    <button type="submit" onclick="descargarCSV()" style="margin:1em;">Enviar</button>
+                    <div class="field_form">                      
+                        <label for="turno">Seleccionar tipo de <b>turno</b>:</label><br>
+                        <select name="turno" id="turno" size="1" required>
+                            <option value="1">--</option>
+                            <option value="2">Programado</option>
+                            <option value="3">Urgencia</option>
+                            <option value="4">Telemedicina</option>
+                            <option value="5">Seguimiento</option>
+                            <option value="6">Vacunación</option>
+                            <option value="7">Chequeo preventivo</option>
+                            <option value="8">Especializada</option>
+                        </select>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label><br>
+                        <select name="turno" id="turno" size="1">
+                            <option value="1">--</option>
+                            <option value="2">Pediatría</option>
+                            <option value="3">Prenatal</option>
+                            <option value="4">Diabetes</option>
+                            <option value="5">Salud mental</option>
+                            <option value="6">Dermatología</option>
+                            <option value="7">Ginecología</option>
+                            <option value="8">Sexología</option>
+                            <option value="9">Cardiología</option>
+                            <option value="10">Nutricionista</option>
+                            <option value="11">Endocrinología</option>
+                            <option value="12">Oftalmología</option>
+                            <option value="13">Traumatología</option>
+                            <option value="14">Neurología</option>
+                            <option value="15">Gastroenterología</option>
+                            <option value="16">Médico de cabecera/general</option>
+                        </select>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="dia">Seleccione el día:</label>
+                        <input type="date" name="dia" id="dia" required min="today"><br>
+                    </div>
+                    <div class="field_form">                      
+                        <label for="hora">Seleccione el horario:</label>
+                        <input type="time" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
+                    </div>
+                    <div class="field_form">                      
+                        <small>El horario de atención es de 9am a 6pm</small>
+                    </div>
                 </fieldset>
-            <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
-            </form>
+                <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
+                <button class="button_send" type="submit" onclick="descargarCSV()">Enviar</button>
+        </form>
         </div>
     </div>
     <footer>

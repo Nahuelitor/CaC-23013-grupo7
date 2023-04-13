@@ -22,25 +22,19 @@ body {
   text-align:center;
 }
 /* PARA MODIFICAR FORMULARIO DE TURNOS */
-#formulario{
+.form{
   margin:1em;
-  margin-top:5em;
+  margin-top:3em;
   padding:.4em;
 }
-/* definiendo grillas para turnos */
-.grilla {
-  display:grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: repeat(2,1fr);
-  grid-template-areas: "presentation presentation presentation turnos turnos"
-}
+
 .grilla .presentationTurnos {
   grid-area: presentation;
-  grid-column:1/4;
+ /* grid-column:1/3;*/
 }
 .grilla .turnos {
   grid-area: turnos;
-  grid-column:4/6;
+/*  grid-column:3/5;*/
 }
 .presentationTurnos {
   color:rgb(0, 156, 135);
@@ -49,4 +43,54 @@ body {
   border: 5px solid ;
   border-radius: 50px;
   min-width: 30%; /*creí que con esto arreglaría algo, pero no funca.*/
+}
+
+/* Para desktop, la info y el form, se verán de manera simultánea 
+ocupando 50% del width c/u. En cambio para dispositivos móviles, 
+la info quedará arriba del form */
+
+/* definiendo grillas para turnos */
+
+@media (max-width: 992px){
+  .grilla {
+    display:grid;
+    grid-template-row: repeat(2,1fr);
+    grid-template-areas:  "presentation"
+                          "turnos"
+  }
+/*
+  .form{
+    margin-top:10em;
+  }
+*/
+}
+@media (min-width: 992px){
+  .grilla {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "presentation turnos"
+  }
+  }
+
+
+/*  @media hará que para dispositivos muy pequeños, 
+    de menos de 350px de width, input paase abajo de label.
+    para el resto de los dispositivos, estará a la izquierda */
+
+ @media (max-width: 350px){
+  .field_form label {
+    display: block;
+  }
+}
+@media (min-width: 350px){
+  .field_form label{
+    display : inline;
+  }
+}
+
+
+
+/* Botón enviar */
+.button_send {
+  margin:1em;
 }
