@@ -21,6 +21,7 @@ footer {
   .footer_grid {
 /*    grid-template-rows: repeat(3,1fr);*/
     grid-template-rows: 140px 90px;
+    grid-template-columns: minmax(max-width);
     grid-template-areas:"developers"
                         "socias_media"
                         "contact"
