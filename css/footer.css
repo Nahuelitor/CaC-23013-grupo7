@@ -22,16 +22,17 @@ footer {
 @media (max-width: 400px){
   .footer_grid {
 /*    grid-template-rows: repeat(3,1fr);*/
-    grid-template-rows: 140px 90px;
-    grid-template-columns: minmax(max-width);
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: 100%;
     grid-template-areas:"developers"
-                        "socias_media"
+                        "socials"
                         "contact"
   }
   .developers {
     text-align: center;
   }
-  .socials_media {
+  .socials {
+    margin: 10%;
     justify-content:center;    
   }
 }
@@ -40,10 +41,10 @@ footer {
   .footer_grid {
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-template-areas:"developers socials_media"
+    grid-template-areas:"developers socials"
                         "developers contact"
   }
-  .socials_media {
+  .socials {
     justify-content: center;
   }
 }
@@ -52,9 +53,9 @@ footer {
   .footer_grid {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 100%;
-    grid-template-areas:"developers contact socials_media"
+    grid-template-areas:"developers contact socials"
   }
-  .socials_media {
+  .socials {
     justify-content:end;
   }
 }
@@ -62,18 +63,14 @@ footer {
 /*   DEFINIMOS CADA SECCION   */
 .developers {
   grid-area: developers;
-/*  width:100%;
-/*  margin:1em;
-*/
-/*  display: flex;*/
 }
 
 .contact {
   text-align: center;    
 }
 
-.socials_media {
-  grid-area: socials_media;
+.socials {
+  grid-area: socials;
   display: flex;
   flex-wrap:wrap;
 }
@@ -101,9 +98,6 @@ footer {
   text-decoration: none;
 }*/
 
-/* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
-/*no Fer, lo que pasa es q una vez q ya entraste al link, no lo podes ver más como si no lo hubieses visitado..*/
-
 .developer a:visited {
   color: #00538a;
   background-color: transparent;
@@ -127,7 +121,11 @@ footer {
   width:min-content;
   margin: 0;
 }
-
+/*
+.social_media a{
+  text-decoration: none;
+}
+*/
 .icon {
   width: 30px;
   margin: 2px;
