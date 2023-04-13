@@ -1,13 +1,16 @@
 
 /*menu header*/
-
+header {
+  background: #74CCDF;  
+  color: #ffffff;
+}
 .navbar_css {
   position: sticky;
   top: 0;
-  background: rgb(0, 156, 135);  
 }
 
 .navbar_css ul{
+  background: #2db2cf;
   list-style-type: none;
   display: flex;
   flex-wrap:wrap;
@@ -15,7 +18,6 @@
 }
 
 .navbar_css li a{
-
   display: inline-block;
   text-decoration: none;
   padding: .6em  1em;
@@ -33,13 +35,13 @@
     text-decoration: none;
   }
   header a:hover {
-    color: #008085;
-    background-color: #c1ffe8;
-    text-decoration: underline;
+    background-color: #E52222;
+    color: #ffffff;
+    text-decoration: none;
   }
   header a:active {
-    color: rgb(1, 77, 66);
+    color: #74CCDF;
     background-color: transparent;
-    text-decoration: underline;
+    text-decoration: none;
   }
   /* Acá termina colores links header. */

@@ -1,7 +1,9 @@
 footer {
+  background:  #2db2cf;
+  color: #000000;
     /*display:flex;
     /*text-align: right;*/
-    border-top: 5px solid rgb(0, 156, 135);
+    border-top: 5px solid  #2db2cf;
     /*padding-right:30px;*/
 
     margin:0;
@@ -89,7 +91,7 @@ footer {
 
 .developer a {
   text-decoration: none;
-  color:rgb(0, 156, 135);
+  color: #000000;
 }
 
 /*.developer a:link {
@@ -108,11 +110,11 @@ footer {
 }
 
 .developer a:hover {
-  color: #004446;
+  color: #ffffff;
   text-decoration: underline;
 }
 .developer a:active {
-  color: rgb(1, 77, 66);
+  color: #74CCDF;
   background-color: transparent;
   text-decoration: underline;
 }
