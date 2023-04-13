@@ -6,8 +6,8 @@ body {
 .presentation {
     color:rgb(0, 156, 135);
     margin: 5%; 
-    width: 55%;
-    display:inline-block;
+/*    width: 55%;
+    display:inline-block;*/
     padding: 3%;
     border: 5px solid ;
     border-radius: 50px;
@@ -33,7 +33,7 @@ body {
 }
 .presentationTurnos {
   color:rgb(0, 156, 135);
-  margin: 5%; 
+  margin: 3%; 
   padding: 3%;
   border: 5px solid ;
   border-radius: 50px;
@@ -47,19 +47,24 @@ body {
 
 /* PARA MODIFICAR FORMULARIO DE TURNOS */
 .form{
-  margin:1em;
-  margin-top:3em;
-  padding:.4em;
+  margin:3%;
+  /*margin-top:3em;*/
+/*  padding:.4em;*/
 }
+/* cada sección del Form */
 .fields_datos{
+  margin-top: 5%;
   padding-bottom: 5%;
 }
 .fields_receta{
+  margin-top: 5%;
   padding-bottom: 5%;
 }
 .fields_turnos{
+  margin-top: 5%;
   padding-bottom: 5%;
 }
+/* Campos */
 .field_form {
   padding-top: 3.5%;
 }
@@ -73,7 +78,7 @@ la info quedará arriba del form */
   .grilla {
     grid-template-rows: repeat(2,1fr);
     grid-template-areas:  "presentation"
-                          "turnos"
+                          "turnos";
   }
 }
 @media (min-width: 992px){

@@ -1,86 +1,136 @@
 footer {
-    display:flexbox;
+    /*display:flex;
     /*text-align: right;*/
     border-top: 5px solid rgb(0, 156, 135);
     /*padding-right:30px;*/
 
     margin:0;
     padding:.3em;
-  }
+}
+
+/* DEFINIFOS LA GRILLA DEL FOOTER  */
+.footer_grid {
+  display: grid;
   
+}
+
+/*  no consigo que entren los ico en socials_media  */
+
+/* AJUSTE DE LAS SECCIONES DEL FOOTER SEGUN EL WIDTH   */
+@media (max-width: 400px){
+  .footer_grid {
+/*    grid-template-rows: repeat(3,1fr);*/
+    grid-template-rows: 140px 90px;
+    grid-template-areas:"developers"
+                        "socias_media"
+                        "contact"
+  }
   .developers {
-    margin:1em;
-    width:100%;
- 
-  /*  display: flex;*/
+    text-align: center;
   }
-  
-  .developer {
-   /* border: 1px solid; */ 
-    margin-left: 10px;
-    /* text-align: left; */
+  .socials_media {
+    justify-content:center;    
   }
-  
-  .developer a {
-    text-decoration: none;
-    color:rgb(0, 156, 135);
-  /*  display: inline-block;*/
+}
+
+@media (min-width: 400px){
+  .footer_grid {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:"developers socials_media"
+                        "developers contact"
   }
-  
-  /*.developer a:link {
-    color: rgb(11, 158, 139);
-    background-color: transparent;
-    text-decoration: none;
-  }*/
-  
-  /* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
-  /*no Fer, lo que pasa es q una vez q ya entraste al link, no lo podes ver más como si no lo hubieses visitado..*/
-  
-  .developer a:visited {
-    color: #00538a;
-    background-color: transparent;
-    text-decoration: none;
+  .socials_media {
+    justify-content: center;
   }
-  
-  .developer a:hover {
-    /* border: 2px solid rgb(0, 156, 135); */
-    color: #004446;
-    /*background-color: #c1ffe8;*/
-    text-decoration: underline;
+}
+
+@media (min-width: 600px){
+  .footer_grid {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    grid-template-areas:"developers contact socials_media"
   }
-  .developer a:active {
-    color: rgb(1, 77, 66);
-    background-color: transparent;
-    text-decoration: underline;
+  .socials_media {
+    justify-content:end;
   }
-.social_medias {
-    position:absolute;
-    right: .5em;
-    margin: .5em;
-    margin-right: 1em;
-    display: inline-flex;
-  
-  
-  /* le puse borde sólo para que sirva de guia. Luego lo sacamos */  
-    border: 1px solid;    
-  
-  }
-  
-  .icon {
-    width: 30px;
-    margin: 2px;
-    border-radius:50%;
-  }
-  
-  
- .social_media{
-    width:min-content;
-    list-style: none;
-    margin-right: .5rem;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  
-  
-  /*termina footer*/
+}
+
+/*   DEFINIMOS CADA SECCION   */
+.developers {
+  grid-area: developers;
+/*  width:100%;
+/*  margin:1em;
+*/
+/*  display: flex;*/
+}
+
+.contact {
+  text-align: center;    
+}
+
+.socials_media {
+  grid-area: socials_media;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+
+
+
+
+.developer {
+  margin-left: 10px;
+}
+
+.developer a {
+  text-decoration: none;
+  color:rgb(0, 156, 135);
+}
+
+/*.developer a:link {
+  color: rgb(11, 158, 139);
+  background-color: transparent;
+  text-decoration: none;
+}*/
+
+/* esta pseudo clase no está funcionando, supongo que es porque se vuelven a cargar las páginas */
+/*no Fer, lo que pasa es q una vez q ya entraste al link, no lo podes ver más como si no lo hubieses visitado..*/
+
+.developer a:visited {
+  color: #00538a;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.developer a:hover {
+  color: #004446;
+  text-decoration: underline;
+}
+.developer a:active {
+  color: rgb(1, 77, 66);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/*  SOCIAL MEDIA */
+
+.social_media{
+  width:min-content;
+  margin: 0;
+}
+
+.icon {
+  width: 30px;
+  margin: 2px;
+}
+
+/*  CONTACT  */
+
+
+/*termina footer*/

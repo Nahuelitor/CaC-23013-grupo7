@@ -1,6 +1,19 @@
+Para resolver:
+
+23-04-13 /*  no consigo que entren los ico en socials_media  */
+
+
+
+
+
+
 Los links(menu) arriba, como le gusta al profe (Nahue)
+
 
 QUEDA POR RESOLVER EL TEMA DE LOS ICONOS DE LAS SOCIAL MEDIA.
 
+
+
+Referencias:
 
 En este link se ven las transiciones de animate css : https://animate.style/
