@@ -1,15 +1,43 @@
 
 /*menu header*/
+/*
 header {
   background: #74CCDF;  
   color: #ffffff;
 }
-.navbar_css {
+*/
+/* lo siguiente le cambia los colores a los links del header */
+
+header a:hover {
+  background-color: #4a6fff;
+  color: #ffffff;
+  text-decoration: none;
+}
+/*
+header a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+header a:visited {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+header a:active {
+  color: #74CCDF;
+  background-color: transparent;
+  text-decoration: none;
+}
+*/
+/* Acá termina colores links header. */
+
+.navbar {
   position: sticky;
   top: 0;
 }
 
-.navbar_css ul{
+.navbar ul{
   background: #2db2cf;
   list-style-type: none;
   display: flex;
@@ -17,31 +45,15 @@ header {
   justify-content:end;
 }
 
-.navbar_css li a{
+.navbar li a{
   display: inline-block;
   text-decoration: none;
   padding: .6em  1em;
 }
-  /*termina menu header*/
-  /* lo siguiente le cambia los colores a los links del header */
-  header a:link {
-    color: #ffffff;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  header a:visited {
-    color: #ffffff;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  header a:hover {
-    background-color: #E52222;
-    color: #ffffff;
-    text-decoration: none;
-  }
-  header a:active {
-    color: #74CCDF;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  /* Acá termina colores links header. */
+
+.active_option {
+  background: #0033ff;
+  color: #ffffff;  
+}
+
+/*termina menu header*/
