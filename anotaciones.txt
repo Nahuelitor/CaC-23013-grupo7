@@ -3,7 +3,9 @@ Para resolver:
 23-04-13 /*  no consigo que entren los ico en socials_media  */
 
 
+ICONOS DE SOCIAL MEDIAS EN ESTILO FONT:
 
+<i class="bi bi-facebook"></i>
 
 
 

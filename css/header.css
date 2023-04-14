@@ -8,12 +8,8 @@ header {
 */
 /* lo siguiente le cambia los colores a los links del header */
 
-header a:hover {
-  background-color: #4a6fff;
-  color: #ffffff;
-  text-decoration: none;
-}
-/*
+
+
 header a:link {
   color: #ffffff;
   background-color: transparent;
@@ -24,12 +20,19 @@ header a:visited {
   background-color: transparent;
   text-decoration: none;
 }
+header a:hover {
+  background-color: #49a4c0;
+  border-radius:20% 20% 0 0;
+  border: solid 1px;
+  color: #ffffff;
+  text-decoration: none;
+}
 header a:active {
   color: #74CCDF;
   background-color: transparent;
   text-decoration: none;
 }
-*/
+
 /* Acá termina colores links header. */
 
 .navbar {
@@ -52,8 +55,11 @@ header a:active {
 }
 
 .active_option {
-  background: #0033ff;
-  color: #ffffff;  
+  background: #a9edf0;
+  border-radius:20% 20% 0 0;
+  color: #2db2cf;
+  border-bottom: solid 1px #2db2cf;
+  border-top: solid 1px #2db2cf; 
 }
 
 /*termina menu header*/
