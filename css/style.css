@@ -99,3 +99,56 @@ la info quedará arriba del form */
 .button_send {
   margin:1em;
 }
+
+/*ESTILOS Y GRILLAS PARA LA PAGINA STAFF*/
+
+/* definiendo grilla para staff */
+.staff {
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* definiendo nombres de areas para grid en staff */
+
+.staff .miembroStaff{
+  grid-area: miembroStaff;
+}
+
+.staff img {
+  grid-area: imgStaff;
+}
+
+/* Para desktop, la info y el form, se verán de manera simultánea 
+ocupando 50% del width c/u. En cambio para dispositivos móviles, 
+la info quedará arriba del form */
+
+@media (max-width: 992px){
+  .staff {
+    grid-template-columns:repeat(12, 1fr);
+    grid-template-areas:"textoStaff"  
+                        "miembroStaff imgStaff";
+  }
+}
+@media (min-width: 992px){
+  .staff {
+    grid-template-columns:(12, 1fr);
+    grid-template-areas:"textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff" 
+                        "miembroStaff imgStaff";
+  }
+}
+
+/*  @media hará que para dispositivos muy pequeños, 
+    de menos de 350px de width, input paase abajo de label.
+    para el resto de los dispositivos, estará a la izquierda */
+
+    @media (max-width: 350px){
+      .staff li {
+        display: block;
+      }
+    }
+    @media (min-width: 350px){
+      .staff li{
+        display : inline;
+      }
+    }
+    
