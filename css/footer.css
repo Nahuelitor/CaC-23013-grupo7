@@ -1,12 +1,7 @@
 footer {
-  /*
-  background:  #2db2cf;
-  color: #000000;
-    /*display:flex;
-    /*text-align: right;*/
-    border-top: 5px solid  #2db2cf;
-    /*padding-right:30px;*/
-
+  
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
     margin:0;
     padding:.3em;
 }
@@ -93,14 +88,14 @@ footer {
   color: #000000;
 }
 
-/*.developer a:link {
-  color: rgb(11, 158, 139);
+.developer a:link {
+  color: rgb(255, 255, 255);
   background-color: transparent;
   text-decoration: none;
-}*/
+}
 
 .developer a:visited {
-  color: #00538a;
+  color: #a7a7a7;
   background-color: transparent;
   text-decoration: none;
 }

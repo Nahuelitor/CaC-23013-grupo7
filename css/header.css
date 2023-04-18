@@ -21,14 +21,13 @@ header a:visited {
   text-decoration: none;
 }
 header a:hover {
-  background-color: #49a4c0;
-  border-radius:20% 20% 0 0;
-  border: solid 1px;
+  background-color:rgba(0, 207, 254, 0.467);
+  /* border: solid 3px; */
   color: #ffffff;
   text-decoration: none;
 }
 header a:active {
-  color: #74CCDF;
+  color: #0e0c48;
   background-color: transparent;
   text-decoration: none;
 }
@@ -41,7 +40,7 @@ header a:active {
 }
 
 .navbar ul{
-  background: #2db2cf;
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   list-style-type: none;
   display: flex;
   flex-wrap:wrap;
@@ -55,11 +54,11 @@ header a:active {
 }
 
 .active_option {
-  background: #a9edf0;
-  border-radius:20% 20% 0 0;
+  background: #defdff;
   color: #2db2cf;
-  border-bottom: solid 1px #2db2cf;
-  border-top: solid 1px #2db2cf; 
+}
+.active_option :hover{
+  background: none;
 }
 
 /*termina menu header*/

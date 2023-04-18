@@ -1,7 +1,8 @@
 body {
-    background-color: #a9edf0;
-    color:#112266;
+    background-color: #defdff;
+    color:rgb(51, 42, 113);
     margin:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .presentation {
     margin: 3%;
@@ -131,9 +132,7 @@ la info quedará arriba del form */
 }
 @media (min-width: 992px){
   .staff {
-    grid-template-columns:(12, 1fr);
-    grid-template-areas:"textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff" 
-                        "miembroStaff imgStaff";
+    display:inline-block;
   }
 }
 
@@ -143,12 +142,12 @@ la info quedará arriba del form */
 
     @media (max-width: 350px){
       .staff li {
-        display: block;
+        display: inline-block;
       }
     }
     @media (min-width: 350px){
       .staff li{
-        display : inline;
+        display : inline-block;
       }
     }
-    
+
