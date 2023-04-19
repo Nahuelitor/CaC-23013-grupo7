@@ -8,6 +8,8 @@ ICONOS DE SOCIAL MEDIAS EN ESTILO FONT:
 <i class="bi bi-facebook"></i>
 
 
+USO DE FLATICONS EN LOS SOCIAL MEDIA. (DESCARGADOS DE FLATICON)
+
 
 Los links(menu) arriba, como le gusta al profe (Nahue)
 

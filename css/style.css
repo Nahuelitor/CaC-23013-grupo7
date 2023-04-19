@@ -126,8 +126,9 @@ la info quedará arriba del form */
 @media (max-width: 992px){
   .staff {
     grid-template-columns:repeat(12, 1fr);
-    grid-template-areas:"textoStaff"  
-                        "miembroStaff imgStaff";
+    grid-template-areas:"textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff textoStaff"  
+                        "miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff imgStaff imgStaff"
+                        "miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff miembroStaff imgStaff imgStaff";
   }
 }
 @media (min-width: 992px){
