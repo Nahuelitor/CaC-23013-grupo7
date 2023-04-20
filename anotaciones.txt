@@ -13,15 +13,7 @@ USO DE FLATICONS EN LOS SOCIAL MEDIA. (DESCARGADOS DE FLATICON)
 
 Los links(menu) arriba, como le gusta al profe (Nahue)
 
-
+eee
 QUEDA POR RESOLVER EL TEMA DE LOS ICONOS DE LAS SOCIAL MEDIA.
-<<<<<<< HEAD
-
-=======
-aaa
-ooo
->>>>>>> ce30c2d46a72e75e1a6716abcfa1a1d97bb90250
-
-Referencias:
 
 En este link se ven las transiciones de animate css : https://animate.style/
