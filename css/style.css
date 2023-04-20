@@ -4,6 +4,7 @@ body {
     margin:0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+/* presentation puede servir para una o más páginas */
 .presentation {
     margin: 3%;
     padding: 3%;
@@ -153,17 +154,18 @@ la info quedará arriba del form */
     }
 
     /* staff */
-    .presentacion {
-      margin: 0 auto;
-      padding: 0 .8em;
-    }
     .staff {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      max-width: 1600px;
     }
     .card {
-      width: 33%;
+      background-color:#d5f5f7;
+      width: 15em;
+      padding:1em;
+      margin:1em;
+      text-align:center;
     }
     .imgStaff {
       display: block;
