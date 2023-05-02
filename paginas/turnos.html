@@ -56,34 +56,36 @@
             <h2>Reserva de Turnos</h2>
             <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
         
-            <form>
+            <form action="" class="formulario" id="formulario">
                 <fieldset class="fields_datos">
                     <legend><b>Datos personales</b></legend>
                     <div class="field_form">                      
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" id="nombre" name="nombre"  autocomplete="on"required>
+                        <div class formulario__grupo id="grupo__nombre">
+                            <label for="nombre">Nombre: </label>
+                            <input type="text" class="formulario__input" id="nombre" name="nombre"  autocomplete="on"required>
+                        </div>
                     </div>
                     <div class="field_form">                      
                         <label for="apellido">Apellido: </label>
-                        <input type="text" id="apellido" name="apellido"  autocomplete="on"required>
+                        <input type="text" class="formulario__input" id="apellido" name="apellido"  autocomplete="on" required>
                     </div>
                     <div class="field_form">                      
                         <label for="dni">DNI: </label>
-                        <input type="text" id="dni" name="dni"  autocomplete="on"required>
+                        <input type="text" class="formulario__input" id="dni" name="dni"  autocomplete="on" required>
                     </div>
                     <div class="field_form">                      
                         <label for="fecNac">Fecha de Nac.</label>
-                        <input type="date" name="fecNac" id="fecNac">
+                        <input type="date" class="formulario__input" name="fecNac" autocomplete="on" id="fecNac" required>
                     </div>
                     <div class="field_form">                                              
                         <label for="correo">E-mail</label>
-                        <input type="email" name="correo" id="correo" autocomplete="on" required>
+                        <input type="email" class="formulario__input" name="correo" id="correo" autocomplete="on" required>
                     </div>
                     <div class="field_form">                      
-                        <label for="teléfono">Teléfono:</label>
-                        <input type="tel" id="teléfono" name="teléfono" placeholder="11-2345-6789" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="1123456789" autocomplete="on" required>
                     </div>                   
-                    <small>Ej: 11-2345-6789</small>
+                    <small>Ej: 1123456789</small>
                 </fieldset>
 
                 <fieldset class="fields_receta">
@@ -132,11 +134,11 @@
                     </div>
                     <div class="field_form">                      
                         <label for="dia">Seleccione el día:</label>
-                        <input type="date" name="dia" id="dia" required min="today"><br>
+                        <input type="date" class="formulario__input" name="dia" id="dia" required min="today"><br>
                     </div>
                     <div class="field_form">                      
                         <label for="hora">Seleccione el horario:</label>
-                        <input type="time" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
+                        <input type="time" class="formulario__input" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
                     </div>               
                     <small>El horario de atención es de 9am a 6pm</small>
                 </fieldset>
@@ -191,5 +193,6 @@
         </div>
     </footer>
 
+    <script src="../js/formulario.js"></script>
 </body>
 </html>
