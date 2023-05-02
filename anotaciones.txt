@@ -1,20 +1,5 @@
-Para resolver:
-
-23-04-13 /*  no consigo que entren los ico en socials_media  */
-
-
-ICONOS DE SOCIAL MEDIAS EN ESTILO FONT:
-
-<i class="bi bi-facebook"></i>
-
-
-USO DE FLATICONS EN LOS SOCIAL MEDIA. (DESCARGADOS DE FLATICON)
-
-
-Los links(menu) arriba, como le gusta al profe (Nahue)
-
-eee
-iii
-QUEDA POR RESOLVER EL TEMA DE LOS ICONOS DE LAS SOCIAL MEDIA.
+Los "Font Awesome" están presentes en las social media en el footer.
 
 En este link se ven las transiciones de animate css : https://animate.style/
+
+Las animaciones se encuentran en el "header" título principal y subtitulo.

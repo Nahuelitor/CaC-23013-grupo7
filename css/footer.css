@@ -6,13 +6,90 @@ footer {
     padding:.3em;
 }
 
-/* DEFINIFOS LA GRILLA DEL FOOTER  */
+/*   DEFINIMOS CADA SECCION   */
+
+.contact {
+  text-align: center;
+  grid-area: contact;    
+}
+
+.contact a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: #a7a7a7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #d7d7d7;
+  text-decoration: underline;
+}
+.contact a:active {
+  color: #74CCDF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+.socials {
+  grid-area: socials;
+  display: flex;
+  flex-wrap:wrap;
+  margin-right:5px;
+}
+
+.developers {
+  grid-area: developers;
+  margin-left:1em;
+}
+
+.developer {
+  margin-left: 10px;
+}
+
+.developer a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.developer a:visited {
+  color: #a7a7a7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.developer a:hover {
+  color: #d7d7d7;
+  text-decoration: underline;
+}
+.developer a:active {
+  color: #74CCDF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+
+/*  SOCIAL MEDIA */
+
+.social_media{
+  width:min-content;
+  margin: 15px 5px;
+
+}
+
+
+/* DEFINIMOS LA GRILLA DEL FOOTER  */
 .footer_grid {
   display: grid;
   
 }
 
-/*  no consigo que entren los ico en socials_media  */
 
 /* AJUSTE DE LAS SECCIONES DEL FOOTER SEGUN EL WIDTH   */
 @media (max-width: 400px){
@@ -41,7 +118,10 @@ footer {
                         "developers contact"
   }
   .socials {
-    justify-content: center;
+    justify-content: end;
+  }
+  .contact {
+    padding-bottom:15px;
   }
 }
 
@@ -56,78 +136,7 @@ footer {
   }
 }
 
-/*   DEFINIMOS CADA SECCION   */
-.developers {
-  grid-area: developers;
-}
 
-.contact {
-  text-align: center;    
-}
-
-.socials {
-  grid-area: socials;
-  display: flex;
-  flex-wrap:wrap;
-}
-
-.contact {
-  grid-area: contact;
-}
-
-
-
-
-
-.developer {
-  margin-left: 10px;
-}
-
-.developer a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.developer a:link {
-  color: rgb(255, 255, 255);
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.developer a:visited {
-  color: #a7a7a7;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.developer a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-}
-.developer a:active {
-  color: #74CCDF;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-
-/*  SOCIAL MEDIA */
-
-.social_media{
-  width:min-content;
-  margin: 0;
-}
-/*
-.social_media a{
-  text-decoration: none;
-}
-*/
-.icon {
-  width: 30px;
-  margin: 2px;
-}
-
-/*  CONTACT  */
 
 
 /*termina footer*/
