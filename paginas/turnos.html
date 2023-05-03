@@ -51,6 +51,8 @@
             </div>
         </section>
 
+        <!-- FORMULARIO -->
+
         <div class="form">
             <!-- <h2 id="request_form">Reserva de Turnos</h2> -->
             <h2>Reserva de Turnos</h2>
@@ -59,55 +61,87 @@
             <form action="" class="formulario" id="formulario">
                 <fieldset class="fields_datos">
                     <legend><b>Datos personales</b></legend>
+                    
+                    <!-- NOMBRE -->
+                    
                     <div class="field_form">                      
                         <div class="formulario__grupo" id="grupo__nombre">
                             <label for="nombre">Nombre: </label>
                             <span class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" id="nombre" name="nombre"  autocomplete="on"required>
+                                <input type="text" class="formulario__input" id="nombre" name="nombre"  autocomplete="on">
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </span>
-                            <p class="formulario__input-error">El nombre debe contener solamente letras y no más de 40 dígitos.</p>    
+                            <p class="formulario__input-error">El nombre debe contener solamente letras y menos de 40 dígitos.</p>    
                         </div>
                     </div>
+
+                    <!-- APELLIDO -->
+
                     <div class="field_form">
                         <div class="formulario__grupo" id="grupo__apellido">                      
                             <label for="apellido">Apellido: </label>
                             <span class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" id="apellido" name="apellido"  autocomplete="on" required>
+                                <input type="text" class="formulario__input" id="apellido" name="apellido"  autocomplete="on" >
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </span>
-                            <p class="formulario__input-error">El apellido debe contener solamente letras y no más de 40 dígitos.</p>
+                            <p class="formulario__input-error">El apellido debe contener solamente letras y menos de 40 dígitos.</p>
                         </div>
                     </div>
+
+                    <!-- DNI -->
+
                     <div class="field_form">
                         <div class="formulario__grupo" id="grupo__dni">                      
                             <label for="dni">DNI: </label>
                             <span class="formulario__grupo-input">
-                                <input type="text" class="formulario__input" id="dni" name="dni"  autocomplete="on" required>
+                                <input type="text" class="formulario__input" id="dni" name="dni"  autocomplete="on" >
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </span>
-                            <p class="formulario__input-error">El DNI solo debe contener números.</p>
+                            <p class="formulario__input-error">El DNI solamente debe contener números.</p>
                         </div>    
                     </div>
+
+                    <!-- FECHA NACIMIENTO -->
+
                     <div class="field_form">
                         <div class="formulario__grupo" id="grupo__fecNac">                      
                             <label for="fecNac">Fecha de nacimiento:</label>
                             <span class="formulario__grupo-input">
-                                <input type="date" class="formulario__input" name="fecNac" autocomplete="on" id="fecNac" required>
-                                <i class="formulario__validacion-estado-especial fas fa-times-circle"></i>
+                                <input type="date" class="formulario__input" name="fecNac" autocomplete="on" id="fecNac" >
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </span>
                             <p class="formulario__input-error">Debe ingresar su fecha de nacimiento.</p>
                         </div>
                     </div>
-                    <div class="field_form">                                              
-                        <label for="correo">E-mail:</label>
-                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ejemplo@lafamilia.com" autocomplete="on" required>
+
+                    <!-- CORREO -->
+
+                    <div class="field_form">
+                        <div class="formulario__grupo" id="grupo__correo">                                              
+                            <label for="correo">E-mail:</label>
+                            <span class="formulario__grupo-input">
+                                <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ejemplo@lafamilia.com" autocomplete="on" >
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </span>
+                            <p class="formulario__input-error">Ingrese una dirección de correo válida.</p>
+                        </div>
                     </div>
-                    <div class="field_form">                      
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="1123456789" autocomplete="on" required>
+
+                    <!-- TELEFONO -->
+
+                    <div class="field_form">
+                        <div class="formulario__grupo" id="grupo__telefono">                      
+                            <label for="telefono">Teléfono:</label>
+                            <span class="formulario__grupo-input">
+                                <input type="tel" class="formulario__input" id="telefono" name="telefono" placeholder="1123456789" autocomplete="on" >
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </span>
+                            <p class="formulario__input-error">Solamente debe ingresar números.</p>
+                        </div>
                     </div>                       
                 </fieldset>
+
+                <!-- RECETA -->
 
                 <fieldset class="fields_receta">
                     <legend><b>Receta</b></legend>
@@ -117,10 +151,18 @@
                         </div>
                 </fieldset>
                 <fieldset class="fields_turnos">
+                    <p>Ingrese fecha y horario de su preferencia y luego le llegará un correo con la confirmación de su turno.<br>
+                    Tenga en cuenta que el horario seleccionado puede variar de acuerdo a disponibilidad. Se le asignará
+                    el turno disponible más cercano al que usted eligió.<br> 
+                    <b>Importante:</b> No agende su turno hasta no recibir el correo de confirmación. 
+                    </p>
                     <legend><b>Turnos</b></legend>
+
+                    <!-- TURNO -->
+
                     <div class="field_form">                      
                         <label for="turno">Seleccionar tipo de <b>turno</b>:</label>
-                        <select name="turno" id="turno" size="1" required>
+                        <select name="turno" id="turno" size="1" >
                             <option value="1">--</option>
                             <option value="2">Programado</option>
                             <option value="3">Urgencia</option>
@@ -131,9 +173,12 @@
                             <option value="8">Especializada</option>
                         </select>
                     </div>
+
+                    <!-- ESPECIALIDAD -->
+
                     <div class="field_form">                      
-                        <label for="turno">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label>
-                        <select name="turno" id="turno" size="1">
+                        <label for="especialidad">Si corresponde a <b>consulta especializada</b> seleccionar especialidad:</label>
+                        <select name="especialidad" id="especialidad" size="1">
                             <option value="1">--</option>
                             <option value="2">Pediatría</option>
                             <option value="3">Prenatal</option>
@@ -152,19 +197,51 @@
                             <option value="16">Médico de cabecera/general</option>
                         </select>
                     </div>
-                    <div class="field_form">                      
-                        <label for="dia">Seleccione el día:</label>
-                        <input type="date" class="formulario__input" name="dia" id="dia" required min="today"><br>
+
+                    <!-- DIA DEL TURNO -->
+
+                    <div class="field_form">
+                        <div class="formulario__grupo" id="grupo__dia">                      
+                            <label for="dia">Seleccione el día:</label>
+                            <span class="formulario__grupo-input">
+                                <input type="date" class="formulario__input" name="dia" id="dia"  min="today">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </span>
+                            <p class="formulario__input-error">Debe ingresar la fecha del turno solicitado.</p>
+                        </div>
                     </div>
-                    <div class="field_form">                      
-                        <label for="hora">Seleccione el horario:</label>
-                        <input type="time" class="formulario__input" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
+
+                    <!-- HORA DEL TURNO -->
+
+                    <div class="field_form">
+                        <div class="formulario__grupo" id="grupo__hora">                      
+                            <label for="hora">Seleccione el horario:</label>
+                            <span class="formulario__grupo-input">
+                                <input type="time" class="formulario__input" name="hora" id="hora" min="09:00" max="18:00" step="00:20" value="09-00">
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </span>
+                            <p class="formulario__input-error">Debe ingresar el horario del turno solicitado (dentro del horario de atención.).</p>
+                        </div>
                     </div>               
                     <small>El horario de atención es de 9am a 6pm</small>
                 </fieldset>
+            
+                <!-- Botón ENVIAR y mensaje de éxito -->
+            
                 <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
-                <button class="button_send" type="submit" onclick="descargarCSV()">Enviar</button>
-        </form>
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+    
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn">Enviar</button>
+                    <span class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</span>
+                </div>
+                
+
+                <!-- <button class="button_send" type="submit" onclick="descargarCSV()">Enviar</button> -->
+        
+            </form>
         </div>
     </div>
     <footer>
