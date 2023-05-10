@@ -240,7 +240,7 @@ la info quedará arriba del form */
     .staff {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       max-width: 1600px;
     }
     .card {
