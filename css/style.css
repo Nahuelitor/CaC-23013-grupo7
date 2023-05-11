@@ -2,7 +2,7 @@ body {
     background-color: #f0fafa;
     color:rgb(51, 42, 113);
     margin:0;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* presentation puede servir para una o más páginas */
 .presentation {
@@ -19,6 +19,15 @@ body {
 .sub_title {
   font-size: 150%;
   text-align:center;
+}
+
+/* ESTILOS PARA PAGINA CONSULTORIOS */
+
+.presentationConsultorios {
+  margin: 3%;
+  padding: 3%;
+  border: 5px solid ;
+  border-radius: 50px;
 }
 
 /* definiendo grilla para info y form_turnos */
@@ -83,7 +92,7 @@ la info quedará arriba del form */
 
 
 /*  @media hará que para dispositivos muy pequeños, 
-    de menos de 350px de width, input paase abajo de label.
+    de menos de 350px de width, en la página turnos, input pase abajo de label.
     para el resto de los dispositivos, estará a la izquierda */
 
  @media (max-width: 350px){
@@ -138,12 +147,6 @@ la info quedará arriba del form */
 .formulario__checkbox {
 	margin-right: 10px;
 }
-
- 
-/* .formulario__mensaje,
-.formulario__grupo-btn-enviar {
-	grid-column: span 2;
-} */
 
 .formulario__mensaje {
 	height: 45px;
@@ -226,8 +229,6 @@ la info quedará arriba del form */
 .formulario__grupo-incorrecto .formulario__input {
 	border: 1px solid #bb2929;
 }
-
-
 
 /* Botón enviar */
 .button_send {
