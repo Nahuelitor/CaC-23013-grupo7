@@ -33,19 +33,26 @@ body {
 
 .mainConsultorios {
   display:inline-flex;
+
 }
 
 .presentationConsultorios{
-  width:60%;
+  width:70%;
+  margin-right:0;
 }
 
 .imagesConsultorios {
+  margin-top:7%;
   width:30%;
 }
 
-.imagesConsultorios img{
+
+.imagesConsultorios .imageConsultorios{
   width:100%;
-  /* height:auto; */
+  margin:0;
+  margin-left:1%;
+  margin-right:1%;
+  padding:0;
 }
 
 /* definiendo grilla para info y form_turnos */
@@ -120,6 +127,7 @@ la info quedará arriba del form */
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "presentation turnos"
   }
+
 }
 
 
