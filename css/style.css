@@ -18,7 +18,9 @@ text-align:center;
 
 /* presentation puede servir para una o más páginas */
 /* ESTILOS PARA PAGINA CONSULTORIOS */
-.presentation, 
+
+.presentation,
+.presentationConsultorios,
 .presentationTurnos {
     margin: 3%;
     padding: 3%;
@@ -26,6 +28,19 @@ text-align:center;
     border-radius: 40px;
 }
 
+/* definiendo grilla para info y form_turnos */
+.grilla {
+  display:grid;
+}
+
+.grilla .presentationTurnos {
+  grid-area: presentation;
+}
+
+/* Campos */
+.field {
+  padding-top: 3.5%;
+}
 
 /* Para desktop, la info y el form, se verán de manera simultánea 
 ocupando 50% del width c/u. En cambio para dispositivos móviles, 
@@ -43,8 +58,8 @@ la info quedará arriba del form */
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "presentation turnos"
   }
-}
 
+}
 
 
 /* definiendo grilla para info y form_turnos */
@@ -117,16 +132,6 @@ label {
 input {
   font-size: 1.1rem;
   padding: .5%;  
-}
-
-select {
-  font-size: 1.1rem;    
-}
-
-.info_field {
-  width: 100%;
-  font-size: 1.2rem;
-  margin: .5% 2% 0% 2%;
 }
 
 
