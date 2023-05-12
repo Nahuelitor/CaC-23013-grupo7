@@ -28,6 +28,24 @@ body {
   padding: 3%;
   border: 5px solid ;
   border-radius: 50px;
+ 
+}
+
+.mainConsultorios {
+  display:inline-flex;
+}
+
+.presentationConsultorios{
+  width:60%;
+}
+
+.imagesConsultorios {
+  width:30%;
+}
+
+.imagesConsultorios img{
+  width:100%;
+  /* height:auto; */
 }
 
 /* definiendo grilla para info y form_turnos */
@@ -71,6 +89,20 @@ body {
 .field_form {
   padding-top: 3.5%;
 }
+/* 
+@media (max-width: 992px){
+  .mainConsultorios {
+    grid-template-rows: repeat(4,2fr);
+    grid-template-areas:  "presentationConsultorios presentationConsultorios presentationConsultorios presentationConsultorios" 
+                          "imagesConsultorios imagesConsultorios imagesConsultorios imagesConsultorios";
+  }
+}
+@media (min-width: 992px){
+  .mainConsultorios {
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: "presentationConsultorios presentationConsultorios presentationConsultorios imagesConsultorios"
+  }
+} */
 
 /* Para desktop, la info y el form, se verán de manera simultánea 
 ocupando 50% del width c/u. En cambio para dispositivos móviles, 
@@ -104,6 +136,9 @@ la info quedará arriba del form */
   .field_form label{
     display : inline;
   }
+  /* .imagesConsultorios {
+    display:none;
+  } */
 }
 /* Seguimos dando estilo a form  */
 
