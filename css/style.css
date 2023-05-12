@@ -18,33 +18,18 @@ text-align:center;
 
 /* presentation puede servir para una o más páginas */
 /* ESTILOS PARA PAGINA CONSULTORIOS */
-
-.presentation,
-.presentationConsultorios,
-.presentationTurnos {
+.presentation, .presentation_turnos {
     margin: 3%;
     padding: 3%;
     border: 3px solid ;
     border-radius: 40px;
 }
 
-/* definiendo grilla para info y form_turnos */
-.grilla {
-  display:grid;
-}
-
-.grilla .presentationTurnos {
-  grid-area: presentation;
-}
-
-/* Campos */
-.field {
-  padding-top: 3.5%;
-}
 
 /* Para desktop, la info y el form, se verán de manera simultánea 
 ocupando 50% del width c/u. En cambio para dispositivos móviles, 
 la info quedará arriba del form */
+
 
 @media (max-width: 992px){
   .grilla {
@@ -58,16 +43,14 @@ la info quedará arriba del form */
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "presentation turnos"
   }
-
 }
-
 
 /* definiendo grilla para info y form_turnos */
 .grilla {
   display:grid;
 }
 
-.grilla .presentationTurnos {
+.grilla .presentation_turnos {
   grid-area: presentation;
 }
 
@@ -88,7 +71,7 @@ la info quedará arriba del form */
 
 .form_titles {
   text-align: center;
-  padding: 3%;
+  padding: 1% 1% 2% 1%;
 }
 
 
@@ -98,40 +81,45 @@ la info quedará arriba del form */
 
 .form_titles h3 {
   font-size: 1.3rem;
+  
 }
 
 
 /* Los títulos de los fieldset, legends o secciones del form */
 .legends {
-  padding: .5% .5%;
+  padding: .5% 1%;
   text-align: center;
   background-color: rgb(69, 222, 233);
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-
 /* cada sección del Form */
 .fields_set{
   display: flex;
   flex-wrap: wrap;
-  padding: 3% 3% 6% 3%;  
+  padding: 1% 2% 3% 2%;  
 }
-
-
 
 /* Campos */
 .field {
-  margin: 1.5% 2% 0% 2%;
+  margin: 1.5% 2% 1% 2%;
 }
 
 label {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 input {
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: .5%;  
+}
+
+
+.info_field {
+  width: 100%;
+  font-size: 1.2rem;
+  margin: .5% 2% 0% 2%;
 }
 
 
