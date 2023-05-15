@@ -46,7 +46,7 @@ text-align:center;
 
 /* presentation puede servir para una o más páginas */
 /* ESTILOS PARA PAGINA Turnos */
-.presentation, .presentation_turnos {
+.presentation, .presentation_turnos, .presentationConsultorios {
     margin: 3%;
     padding: 3%;
     border: 3px solid ;
@@ -308,5 +308,24 @@ input {
   border: 0;
   width: 100%;
   height: auto;
+}
+
+/*CONSULTORIOS */
+
+.mainConsultorios {
+  display:inline-flex;
+}
+
+.presentationConsultorios{
+  width:70%;
+}
+
+.imagesConsultorios {
+  width:30%;
+}
+
+.imagesConsultorios img{
+  width:100%;
+  /* height:auto; */
 }
 
