@@ -29,19 +29,91 @@
 body {
     background-color: var(--Color_bk_body);
     color:var(--Color_body);
-    margin:0;
+/*    margin:0;*/
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
-.main_title {
-  font-size: 300%;
-  text-align: center;
-
+/*      CONTAINER DEL BODY  */
+/*---------------------------*/
+.main_container {
+  width: 100%;
+  max-width: 1500px;
+  min-width: 300px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.sub_title {
-font-size: 150%;
-text-align:center;
+
+/*          HEADER           */
+/*---------------------------*/
+.header {
+  display: inline-flex;
+  height: 130px;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.title_header {
+  width: 100%;
+  text-align: center;
+}
+
+.title_header h1 {
+  font-size: 2.5rem;
+}
+.title_header h2 {
+  font-size: 1.5rem;
+}
+
+.logo_left_header {
+  width: 20%;
+  margin-left: auto;
+}
+
+.logo_rigth_header {
+  width: 20%;
+  margin-right: auto;
+}
+
+.logo_left_header img, .logo_rigth_header img {
+  height: 100%;
+  width: auto;
+}
+
+/* para width < 950 
+  elimina el logo de la derecha del header */
+@media (max-width: 950px) {
+  .logo_rigth_header {
+      display: none;
+  }
+}
+
+/* para width < 750 
+  elimina el logo de la izquierda del header */
+  @media (max-width: 775px) {
+  .logo_left_header {
+      display: none;
+  }
+}
+
+/* para width < 630 
+  aumenta el alto del header */
+  @media (max-width: 630px) {
+  .header {
+    height: 195px;
+  }
+}
+
+/* para width < 400 
+/*  reduce el alto del header y elimina el h2 */
+@media (max-width: 400px) {
+  .header {
+    height: 170px;
+  }
+  
+  .title_header h2 {
+    display: none;
+  }
 }
 
 /* presentation puede servir para una o más páginas */
