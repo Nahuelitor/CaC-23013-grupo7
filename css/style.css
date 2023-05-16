@@ -50,13 +50,13 @@ body {
   display: inline-flex;
   height: 130px;
   padding: 0;
-  box-sizing: border-box;
   width: 100%;
 }
 
 .title_header {
-  width: 100%;
+  width: 120%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .title_header h1 {
@@ -69,11 +69,13 @@ body {
 .logo_left_header {
   width: 20%;
   margin-left: auto;
+  box-sizing: border-box;
 }
 
 .logo_rigth_header {
   width: 20%;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
 .logo_left_header img, .logo_rigth_header img {
@@ -89,17 +91,17 @@ body {
   }
 }
 
-/* para width < 750 
+/* para width < 780 
   elimina el logo de la izquierda del header */
-  @media (max-width: 775px) {
+  @media (max-width: 780px) {
   .logo_left_header {
       display: none;
   }
 }
 
-/* para width < 630 
+/* para width < 650 
   aumenta el alto del header */
-  @media (max-width: 630px) {
+  @media (max-width: 650px) {
   .header {
     height: 195px;
   }
