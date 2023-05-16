@@ -1804,7 +1804,7 @@
 /* Fading entrances  */
 @-webkit-keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: .4;
   }
 
   to {
@@ -1813,7 +1813,7 @@
 }
 @keyframes fadeIn {
   from {
-    opacity: 0;
+    opacity: .4;
   }
 
   to {
