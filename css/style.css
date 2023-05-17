@@ -42,7 +42,6 @@ body {
   max-width: 1500px;
   min-width: 300px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 /*          HEADER           */
@@ -225,7 +224,7 @@ label {
 
 input {
   font-size: 1rem;
-  padding: .5%;  
+  /* padding: .5%;   */
 }
 
 
@@ -247,6 +246,7 @@ input {
 	background: var(--Color_bk_input);
 	border: 1px solid var(--Color_borcer_imput);
 	border-radius: 5px;
+  padding:5px;
 	transition: .3s ease all;
 }
 
