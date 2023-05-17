@@ -73,8 +73,7 @@ body {
 }
 
 .logo_rigth_header {
-  width: 20%;
-  margin-right: auto;
+  margin-right: 0;
   box-sizing: border-box;
 }
 
