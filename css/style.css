@@ -39,7 +39,7 @@ body {
 /*---------------------------*/
 .main_container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1900px;
   min-width: 300px;
   margin: 0 auto;
 }
@@ -379,6 +379,7 @@ input {
 
 .card {
   background-color: var(--Color_bk_card);
+  border-radius: .5em;
   width: 15em;
   padding:1em;
   margin:1em;
@@ -387,7 +388,7 @@ input {
 
 .imgStaff {
   display: block;
-  border: 0;
+  border-radius: .5em;
   width: 100%;
   height: auto;
 }
@@ -400,16 +401,18 @@ input {
 
 .presentation_consultorios{
   width:70%;
-  margin:2% 1% 2% 2%
+  margin:1% 1% 2% 2%;
+  padding: 1% 2% 1% 2%;
 }
 
 .imagesConsultorios {
   width:30%;
-  margin: 10px;
+  margin: 1% 1% 2% 1%;
 }
 
 .imagesConsultorios img{
-  width:100%;
+  width:95%;
+  border-radius: .5em;
   /* height:auto; */
 }
 
@@ -427,7 +430,7 @@ input {
 /* SLIDESHOW DE INDEX */
 
 .slideshow-container {
-  max-width: 1300px;
+  max-width: 1900px;
   position: relative;
   margin: auto;
 }
