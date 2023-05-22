@@ -4,4 +4,4 @@ En este link se ven las transiciones de animate css : https://animate.style/
 
 Las animaciones se encuentran en el "header" título principal y subtitulo.
 
-El consumo de la API se encuentra en la página CONSULTORIOS, al final de la misma.
+El consumo de la API se encuentra en la página CONSULTORIOS, al final de la página.

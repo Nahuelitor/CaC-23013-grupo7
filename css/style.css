@@ -1,10 +1,10 @@
 :root {
-  /* BODY */
+  /* BODY colores */
   --Color_bk_body: #f0fafa; 
   --Color_body:rgb(51, 42, 113); 
 
 
-  /* FORMULARIO */
+  /* FORMULARIO colores */
 
   /* legend */
   --Color_bk_legend: #caf1f4;
@@ -25,27 +25,27 @@
 
 }
 
+/* --- BODY (todas las pág.) --- */
+/* ----------------------------- */
 
 body {
     background-color: var(--Color_bk_body);
     color:var(--Color_body);
-/*    margin:0;*/
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
+    margin: 0 ;
+    width: 100%;
   }
 
-
-/*      CONTAINER DEL BODY  */
-/*---------------------------*/
 .main_container {
-  width: 100%;
-  max-width: 1900px;
-  min-width: 300px;
-  margin: 0 auto;
+   width: 100%; 
+   max-width: 1600px; 
+   min-width: 300px; 
+   margin: 0 auto; 
 }
 
-/*          HEADER           */
-/*---------------------------*/
+/* -------- HEADER(todas las pág.) --------- */
+/* ----------------------------------------- */
+
 .header {
   display: inline-flex;
   height: 130px;
@@ -118,7 +118,58 @@ body {
   }
 }
 
-/* presentation puede servir para una o más páginas */
+/* COLORES LINK NAVBAR */
+.navbar ul li a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar ul li a:visited {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  background-color:#f0fafa;
+  color: #11189a;
+  text-decoration: none;
+}
+.navbar ul li a:active {
+  color: #0e0c48;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* POSICION Y DISPLAY DEL NAVBAR */
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul{
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  list-style-type: none;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:end;
+}
+
+.navbar li a{
+  display: inline-block;
+  text-decoration: none;
+  padding: .6em  1em;
+}
+
+.active_option {
+  background: #f0fafa;
+  color: #2db2cf;
+}
+.active_option :hover{
+  background: #f0fafa;
+}
+
+/* PRESENTATION (UNA O MAS PAG) */
 
 .presentation, .presentation_consultorios, .presentation_staff {
     margin: 2%;
@@ -134,6 +185,9 @@ body {
     background-position: center;
 }
 
+
+/* ----- TURNOS ----- */
+/* ------------------ */
 
 /* Para desktop, la info y el form, se verán de manera simultánea 
 ocupando 50% del width c/u. En cambio para dispositivos móviles, 
@@ -154,7 +208,7 @@ la info quedará arriba del form */
   }
 }
 
-/* definiendo grilla para info y form_turnos */
+/* Definiendo grilla para info y form_turnos */
 .grilla {
   display:grid;
 }
@@ -167,7 +221,7 @@ la info quedará arriba del form */
   grid-area: turnos;
 }
 
-/* PARA MODIFICAR FORMULARIO DE TURNOS */
+/* Dando órden a Turnos */
 .form_turnos{
  
   margin:3%;
@@ -190,7 +244,6 @@ la info quedará arriba del form */
   font-size: 1.3rem;
   
 }
-
 
 /* Los títulos de los fieldset, legends o secciones del form */
 .legends {
@@ -223,16 +276,14 @@ label {
 
 input {
   font-size: 1rem;
-  /* padding: .5%;   */
-}
 
+}
 
 .info_field {
   width: 100%;
   font-size: 1.2rem;
   margin: .5% 2% 0% 2%;
 }
-
 
 /* Seguimos dando estilo a form  */
 
@@ -314,7 +365,6 @@ input {
 	border: none;
 	border-radius: 10px;
   margin-bottom:10px;
-  /*margin-left:3px;*/
 	cursor: pointer;
   transition: .1s ease all;
 
@@ -343,7 +393,7 @@ input {
 	display:block;
 }
 
-/* ----- -----  Estilos para Validacion ----- ----- */
+/* ----- -----  Estilos para Validacion del form ----- ----- */
 .formulario__grupo-correcto .formulario__validacion-estado {
 	color: #1ed12d;
 	opacity: 1;
@@ -367,9 +417,9 @@ input {
   margin:1em;
 }
 
-/*ESTILOS PARA LA PAGINA STAFF*/
+/* ---------- STAFF ----------- */
+/* ---------------------------- */
 
-/* staff */
 .staff {
   display: flex;
   flex-wrap: wrap;
@@ -393,7 +443,8 @@ input {
   height: auto;
 }
 
-/*CONSULTORIOS */
+/* ----- CONSULTORIOS ----- */
+/* ------------------------ */
 
 .mainConsultorios {
   display:inline-flex;
@@ -427,10 +478,18 @@ input {
   }
 }
 
+/* MAPA DE CONSULTORIOS */
+
+#map {
+  font-size: 50px;
+  height: 300px;
+  width: 100%;
+  }   
+
 /* SLIDESHOW DE INDEX */
 
 .slideshow-container {
-  max-width: 1900px;
+  max-width: 1800px;
   position: relative;
   margin: auto;
 }
@@ -445,3 +504,143 @@ input {
   to {opacity: 1}
 }
 
+/* ---- FOOTER (para todas las pág.) ---- */
+/* -------------------------------------- */
+
+footer {
+  
+  background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
+    margin:0;
+    padding:10px;
+    padding-bottom: 20px;
+}
+
+/* CONTACTO */
+
+.contact {
+  text-align: center;
+  grid-area: contact;    
+}
+
+.contact a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: #a7a7a7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #d7d7d7;
+  text-decoration: underline;
+}
+.contact a:active {
+  color: #74CCDF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* REDES SOCIALES */
+
+.socials {
+  grid-area: socials;
+  display: flex;
+  flex-wrap:wrap;
+  margin-right:5px;
+}
+
+.social_media{
+  width:min-content;
+  margin: 15px 5px;
+
+}
+
+/* DEVELOPERS */
+
+.developers {
+  grid-area: developers;
+  margin-left:1em;
+}
+
+.developer {
+  margin-left: 10px;
+}
+
+.developer a:link {
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.developer a:visited {
+  color: #a7a7a7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.developer a:hover {
+  color: #d7d7d7;
+  text-decoration: underline;
+}
+.developer a:active {
+  color: #74CCDF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* DEFINIMOS LA GRILLA DEL FOOTER  */
+.footer_grid {
+  display: grid;
+}
+
+
+/* AJUSTE DE LAS SECCIONES DEL FOOTER SEGUN EL WIDTH   */
+@media (max-width: 400px){
+  .footer_grid {
+    grid-template-rows: max-content max-content max-content;
+    grid-template-columns: 100%;
+    grid-template-areas:"developers"
+                        "socials"
+                        "contact"
+  }
+  .developers {
+    text-align: center;
+  }
+  .socials {
+    margin: 10%;
+    justify-content:center;    
+  }
+}
+
+@media (min-width: 400px){
+  .footer_grid {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:"developers socials"
+                        "developers contact"
+  }
+  .socials {
+    justify-content: end;
+  }
+  .contact {
+    padding-bottom:15px;
+  }
+}
+
+@media (min-width: 600px){
+  .footer_grid {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100%;
+    grid-template-areas:"developers contact socials"
+  }
+  .socials {
+    justify-content:end;
+  }
+}
+
+/*termina footer*/
