@@ -109,7 +109,7 @@ body {
 /*  reduce el alto del header y elimina el h2 */
 @media (max-width: 400px) {
   .header {
-    height: 120px;
+    height: 170px;
   }
   .title_header h2 {
     display: none;
