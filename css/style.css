@@ -66,7 +66,7 @@ body {
 .title_header h2 {
   font-size: 1.5rem;
 }
-
+/* --- LOGOS --- */
 .logo_left_header {
   margin-left: 0;
   box-sizing: border-box;
@@ -79,7 +79,6 @@ body {
 
 .logo_left_header img, .logo_rigth_header img {
   height: 100%;
-  /* width: auto; */
 }
 
 /* para width < 950 
@@ -110,9 +109,8 @@ body {
 /*  reduce el alto del header y elimina el h2 */
 @media (max-width: 400px) {
   .header {
-    height: 170px;
+    height: 120px;
   }
-  
   .title_header h2 {
     display: none;
   }
@@ -171,14 +169,14 @@ body {
 
 /* PRESENTATION (UNA O MAS PAG) */
 
-.presentation, .presentation_consultorios, .presentation_staff {
+.presentation, .presentation_consultorios, .presentation_staff, .presentation_turnos {
     margin: 2%;
     padding: 3%;
     border: 3px solid ;
     border-radius: 40px;
 }
 
-.presentation, .presentation_consultorios {
+.presentation, .presentation_consultorios .presentation_turnos {
     background-image: url("../images/bak_main_sky_strong.jpg");
     background-repeat: no-repeat;
     background-size: 90% auto;
@@ -213,7 +211,7 @@ la info quedará arriba del form */
   display:grid;
 }
 
-.grilla .presentation {
+.grilla .presentation_turnos {
   grid-area: presentation;
 }
 
@@ -223,8 +221,7 @@ la info quedará arriba del form */
 
 /* Dando órden a Turnos */
 .form_turnos{
- 
-  margin: 1%;
+  margin: 2%;
   padding: 0;
   border: 3px solid;
   border-radius: 40px;
@@ -295,7 +292,7 @@ input {
 
 	background: var(--Color_bk_input);
 	border: 1px solid var(--Color_borcer_imput);
-	border-radius: 5px;
+	border-radius: 10px;
   padding:5px;
 	transition: .3s ease all;
 }
@@ -334,8 +331,7 @@ input {
 	line-height: 45px;
 	background: #F66060;
 	padding: 0 15px;
-	border-radius: 3px;
-  padding-left:3px;
+	border-radius: 10px;
 	display: none;
   margin:3px;
 }
@@ -381,9 +377,8 @@ input {
   height: 45px;
 	line-height: 45px;
 	background: #119200;
-	padding: 0 15px;
-	border-radius: 3px;
-  padding-left:3px;
+	padding: 0 30px;
+	border-radius: 10px;
 	display: none;
   margin:3px;
   
@@ -443,6 +438,20 @@ input {
   width: 100%;
   height: auto;
 }
+/* CORTE PARA TURNOS */
+@media (max-width: 400px) {
+  .presentation_turnos{
+    margin-right:7.1%;
+    margin-left:2%;
+  }
+  .form_turnos{
+    max-width:90%;
+  }
+  .grilla{
+    max-height:3700px;
+  }
+}
+
 
 /* ----- CONSULTORIOS ----- */
 /* ------------------------ */
@@ -465,7 +474,6 @@ input {
 .imagesConsultorios img{
   width:95%;
   border-radius: .5em;
-  /* height:auto; */
 }
 
 /* CORTE PARA CONSULTORIOS */
@@ -483,6 +491,7 @@ input {
 
 #map {
   font-size: 50px;
+  border-radius:30px;
   height: 300px;
   width: 100%;
   }   
@@ -611,6 +620,7 @@ footer {
   }
   .developers {
     text-align: center;
+    margin:0;
   }
   .socials {
     margin: 10%;
