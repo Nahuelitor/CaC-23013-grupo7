@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="icon" href="../images/iconos/iconohead.ico" type="imagen/x-icon">
     <link rel="stylesheet" href="../css/style.css"> 
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/animate.css">
     <script src="https://kit.fontawesome.com/46aa305379.js" crossorigin="anonymous"></script>
     <title>Consultorio de la Familia - Turnos</title>
 </head>
 <body>
     <div class="main_container">
+        <!-- HEADER -->
         <header class="header">
             <div class="logo_left_header">
                 <img src="../images/iconos/iconoheader.png" alt="Logo del Consultorio de la Familia">
@@ -26,7 +25,7 @@
                 <img src="../images/iconos/iconoheader.png" alt="Logo del Consultorio de la Familia">
             </div>
         </header>
-
+        <!-- BARRA DE NAVEGACION -->
         <nav class="navbar">
             <ul>
                 <li class="home"><a href="../index.html">Home</a></li>
@@ -37,9 +36,9 @@
         </nav>
     
         <div class="grilla">
-            <section class="presentation">
 
-                <!-- <button><a href="#request_form">Solicitar Turno</a></button> -->
+            <!-- PRESENTACION TURNOS -->
+            <section class="presentation_turnos">
                 <div class="form_titles">
                     <h2>Turnos: Información importante</h2>
                     <h3>Por favor, lea atentamente esta información antes de solicitar un turno.</h3>
@@ -62,9 +61,9 @@
                 </section>
 
             <!-- FORMULARIO -->
-
             <div class="form_turnos">
-                <!-- <h2 id="request_form">Reserva de Turnos</h2> -->
+
+                <!-- TITULO DEL FORM -->
                 <div class="form_titles">
                     <h2>Reserva de Turnos</h2>
                     <h3>Ingrese sus datos a continuación para solicitar turnos:</h3>
@@ -73,14 +72,13 @@
                 <!-- Aquí comienza el formulario  -->
                 <form action="" class="formulario" id="formulario">
 
-                    <!-- Título del grupo de campos de datos personales -->
+                    <!-- TITULO DEL GRUPO -->
                     <div class="legends">Datos personales</div>                   
 
-                    <!-- Grupo de campos de daos personales -->
+                    <!-- GRUPO DE CAMPOS DE DATOS PERSONALES -->
                     <div class="fields_set">
                         
                         <!-- NOMBRE -->   
-
                         <div class="field">                      
                             <div class="formulario__grupo" id="grupo__nombre">
                                 <label for="nombre"><span class="star">*</span> Nombre: </label>
@@ -93,7 +91,6 @@
                         </div>
 
                         <!-- APELLIDO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__apellido">                      
                                 <label for="apellido"><span class="star">*</span> Apellido: </label>
@@ -106,7 +103,6 @@
                         </div>
 
                         <!-- DNI -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__dni">                      
                                 <label for="dni"><span class="star">*</span> DNI: </label>
@@ -119,7 +115,6 @@
                         </div>
 
                         <!-- FECHA NACIMIENTO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__fecNac">                      
                                 <label for="fecNac"><span class="star">*</span> Fecha de nacimiento:</label>
@@ -132,7 +127,6 @@
                         </div>
 
                         <!-- CORREO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__correo">                                              
                                 <label for="correo"><span class="star">*</span> E-mail:</label>
@@ -145,7 +139,6 @@
                         </div>
 
                         <!-- TELEFONO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__telefono">                      
                                 <label for="telefono"><span class="star">*</span> Teléfono:</label>
@@ -183,7 +176,7 @@
                     <!-- Título de grupo de campos Turnos -->
                     <div class="legends">Turnos</div>
 
-                        <!-- Grupo de campos Turnos -->
+                    <!-- Grupo de campos Turnos -->
                     <div class="fields_set">
                         <div class="info_field">
                             <p>Ingrese su fecha y horario de preferencia. Luego aguarde un correo con la confirmación de su turno.<br>
@@ -193,7 +186,6 @@
                         </div>
 
                         <!-- CAMPO TIPO DE TURNO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__turno">                      
                                 <label for="turno"><span class="star">*</span> Tipo de <b>turno</b>:</label>
@@ -215,7 +207,6 @@
                         </div>
 
                         <!-- ESPECIALIDAD -->
-
                         <div class="field">                      
                             <label for="especialidad">Si corresponde a <b>consulta especializada</b>, seleccionar especialidad:</label>
                             <div class="formulario__grupo-input">
@@ -241,7 +232,6 @@
                         </div>
 
                         <!-- DIA DEL TURNO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__dia">                      
                                 <label for="dia"><span class="star">*</span> Seleccione el día:</label>
@@ -254,7 +244,6 @@
                         </div>
 
                         <!-- HORA DEL TURNO -->
-
                         <div class="field">
                             <div class="formulario__grupo" id="grupo__hora">                      
                                 <label for="hora"><span class="star">*</span> Seleccione el horario:</label>
@@ -267,15 +256,15 @@
                             </div>
                         </div>               
                     </div>
-                    
+
+                    <!-- CAMPOS OBLIGATORIOS -->
                     <div class="fields_set">
                         <div class="field">
                             <p><span class="star">*</span><small> campos obligatorios.</small></p>
                         </div>
                     </div>
+
                     <!-- Botón ENVIAR y mensaje de éxito -->
-                
-                    <!--  <button  onclick="descargarCSV()">Descargar CSV</button>   -->
                     <div class="formulario__mensaje" id="formulario__mensaje">
                         <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> verifica los campos obligatorios.</p>
                     </div>
@@ -284,18 +273,17 @@
                         <button type="submit" class="formulario__btn">Enviar</button>
                         <span class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</span>
                     </div>
-                    
-
-                    <!-- <button class="button_send" type="submit" onclick="descargarCSV()">Enviar</button> -->
-            
+                                
                 </form>
             </div>
         </div>
+        <!-- FOOTER -->
         <footer>
             <div class="footer_grid">
+
+                <!-- DESARROLLADORES -->
                 <div class="developers">
                     <p>Developers:</p>
-                    <!-- <address> -->
                         <div class="developer">
                             <a href="https://www.linkedin.com/in/camila-echavarria-2a8403217" target="_blank" title="Linkedin del desarrollador">Camila Echavarria</a>
                         </div>
@@ -308,18 +296,16 @@
                         <div class="developer">
                             <a href="https://ar.linkedin.com/in/fernando-poch-tuc-arg" target="_blank" title="Linkedin del desarrollador">Fernando Poch</a>
                         </div>
-                    <!-- </address> -->
                 </div>
 
-                <!-- CONTACT -->
+                <!-- CONTACTO -->
                 <div class="contact">
                     <p>Contactanos:</p>
                     <a href="mailto:consultorio@delafamilia.com.ar">Enviar email</a>
                 </div>
 
-                <!-- iconos de las redes con sus recpectivos enlaces  -->
+                <!-- REDES SOCIALES  -->
                 <div class="socials">
-                    <!-- <aside> -->
                         <div class="social_media">
                             <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
                         </div>
@@ -332,7 +318,6 @@
                         <div class="social_media">
                             <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i></a>
                         </div>        
-                    <!-- </aside>         -->
                 </div>
             </div>
         </footer>
